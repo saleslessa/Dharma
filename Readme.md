@@ -61,7 +61,7 @@ Below is a diagram explaining the default structure and dependencies of a block 
 | ICommands | Interface | Internal | | List of all possible commands (writing operations) to be implemented for the block |
 | IQueries | Interface | Internal | | List of all possible queries (reading operations) to be implemented for hte block |
 | CommandImplementation | Class | Internal | `ICommands` | Implementation of all commands provided by the block. To do so, it uses `Commands` component |
-| QueryImplementation | Class | Internal | `IQueries`, `Gateway` | Implementation of all queries provided by the block. To do so, it uses `Queries` component. The dependency of `Gateway` core component is optional and to connect to other block, if needed |
+| QueryImplementation | Class | Internal | `IQueries`, `Gateway` | Implementation of all queries provided by the block. To do so, it uses `Queries` component. The dependency of `Gateway` core component is optional and is to connect to other block, if needed |
 | Commands | Class | Internal | `BaseCommand`, `Models` | Implementation of a single command. This project has its own persistence connection for writing its information. For this moment the reading and writing information are the same, but the structure is prepared for future refactorings |
 | Queries | Class | Internal | `BaseQuery`, `Models` | Implementation of a single query. This project has its own query connection. For this moment the reading and writing information are the same, but the structure is prepared for future refactorings. |
 | Models | Class | Internal | `BaseModel` | Model classes to be used in the block | 
