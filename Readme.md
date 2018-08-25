@@ -34,7 +34,7 @@ The project is designed to use distributed architecture with following tools, pa
 - AutoFac for Dependency Injection
 - Mongodb Driver
 
-**This project does not uses in this moment some technologies normally related to `CQRS`, such as `Event Sourcing` and `Message Queue`*
+**This project does not uses in this moment some technologies normally related to `CQRS`, such as `Command Handler`, `Event Sourcing` and `Message Queue`*
 
 ### Front end
 - IONIC
