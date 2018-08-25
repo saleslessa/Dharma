@@ -1,0 +1,35 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+    <RootNamespace>Dharma.LoggingBlock.Implementation</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Logging.Interfaces\obj\Debug\netcoreapp2.1\Logging.Interfaces.assets.cache" />
+    <None Remove="Logging.Interfaces\obj\Logging.Interfaces.csproj.nuget.g.props" />
+    <None Remove="Logging.Interfaces\obj\Logging.Interfaces.csproj.nuget.g.targets" />
+    <None Remove="Logging.Interfaces\obj\project.assets.json" />
+    <None Remove="Logging.Tests\obj\Debug\netcoreapp2.1\Logging.Tests.assets.cache" />
+    <None Remove="Logging.Tests\obj\Debug\netcoreapp2.1\Logging.Tests.csprojResolveAssemblyReference.cache" />
+    <None Remove="Logging.Tests\obj\Logging.Tests.csproj.nuget.g.props" />
+    <None Remove="Logging.Tests\obj\Logging.Tests.csproj.nuget.g.targets" />
+    <None Remove="Logging.Tests\obj\project.assets.json" />
+    <None Remove="Logging.Tests\obj\Logging.Tests.csproj.nuget.cache" />
+    <None Remove="Logging.Interfaces\obj\Debug\netcoreapp2.1\Logging.Interfaces.AssemblyInfoInputs.cache" />
+    <None Remove="Logging.Tests\obj\Debug\netcoreapp2.1\Logging.Tests.AssemblyInfoInputs.cache" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="Logging.Interfaces\obj\Debug\netcoreapp2.1\Logging.Interfaces.AssemblyInfo.cs" />
+    <Compile Remove="Logging.Tests\obj\Debug\netcoreapp2.1\Logging.Tests.AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Interfaces\LoggingBlock.Interfaces.csproj" />
+    <ProjectReference Include="..\Components\Logging.Components.Queries\Logging.Components.Queries\LoggingBlock.Components.Queries.csproj" />
+    <ProjectReference Include="..\Components\Logging.Components.Command\LoggingBlock.Components.Commands.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="MongoDB.Driver" Version="2.7.0" />
+    <PackageReference Include="MongoDB.Driver.Core" Version="2.7.0" />
+  </ItemGroup>
+</Project>

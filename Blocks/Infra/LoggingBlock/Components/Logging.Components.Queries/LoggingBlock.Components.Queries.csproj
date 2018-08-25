@@ -1,0 +1,29 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+    <RootNamespace>Dharma.LoggingBlock.Components.Queries</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\Core\Dharma.Core.csproj" />
+    <ProjectReference Include="..\..\..\Models\Logging.Models\LoggingBlock.Models.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="MongoDB.Driver" Version="2.7.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Update="LoggingBlock.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>LoggingBlock.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="LoggingBlockQuery.resx">
+      <LastGenOutput>LoggingBlock.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="LoggingBlock.Designer.cs">
+      <DependentUpon>LoggingBlockQuery.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+</Project>

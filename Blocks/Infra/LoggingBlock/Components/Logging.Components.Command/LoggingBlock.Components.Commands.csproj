@@ -1,0 +1,29 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+    <RootNamespace>Dharma.LoggingBlock.Components.Commands</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Commands\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Core\Dharma.Core.csproj" />
+    <ProjectReference Include="..\..\Models\Logging.Models\LoggingBlock.Models.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Update="LoggingBlockCommand.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>LoggingBlockCommand.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="LoggingCommandHandler.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="LoggingBlockCommand.Designer.cs">
+      <DependentUpon>LoggingBlockCommand.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+</Project>
