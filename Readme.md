@@ -6,7 +6,7 @@ Project for software engineering study purposes. The goal of this project is to 
 
 There is 3 sorts of actors that interacts with the system:
 
-| Actor | Explanation |
+| Actor | Description |
 | ----- | ----------- |
 | Donator | User that  provides and catalogs items to be donated |
 | Finder | Responsible for finding spots on the map to be shared among all the other users. Has high interaction with maps, location, gps, etc. In a practical way this profile mark points on the map that needs some kind of help, such as foods, clothes, etc. |
@@ -37,7 +37,7 @@ The project is designed to use distributed architecture with following tools, pa
 **This project does not uses in this moment some technologies normally related to `CQRS`, such as `Command Handler`, `Event Sourcing` and `Message Queue`*
 
 ### Front end
-- IONIC
+- Xamarin
 - Angular
 
 ### Software architecture and modeling
