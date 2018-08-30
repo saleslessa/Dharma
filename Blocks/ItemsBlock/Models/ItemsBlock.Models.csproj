@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Infra\Core\Dharma.Core.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Validations\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="Validations\BaseValidation.cs" />
+    <Compile Remove="ItemCategory.cs" />
+  </ItemGroup>
+</Project>

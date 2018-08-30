@@ -11,7 +11,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\..\Core\Dharma.Core.csproj" />
-    <ProjectReference Include="..\Logging.Components.Queries\Logging.Components.Queries\LoggingBlock.Components.Queries.csproj" />
-    <ProjectReference Include="..\Logging.Components.Command\LoggingBlock.Components.Commands.csproj" />
+    <ProjectReference Include="..\Commands\LoggingBlock.Components.Commands.csproj" />
+    <ProjectReference Include="..\Queries\LoggingBlock.Components.Queries.csproj" />
   </ItemGroup>
 </Project>

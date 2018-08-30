@@ -6,10 +6,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\..\..\Core\Dharma.Core.csproj" />
-    <ProjectReference Include="..\..\..\Models\Logging.Models\LoggingBlock.Models.csproj" />
-  </ItemGroup>
-  <ItemGroup>
     <PackageReference Include="MongoDB.Driver" Version="2.7.0" />
   </ItemGroup>
   <ItemGroup>
@@ -25,5 +21,9 @@
     <Compile Update="LoggingBlock.Designer.cs">
       <DependentUpon>LoggingBlockQuery.resx</DependentUpon>
     </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Core\Dharma.Core.csproj" />
+    <ProjectReference Include="..\..\Models\Logging.Models\LoggingBlock.Models.csproj" />
   </ItemGroup>
 </Project>
