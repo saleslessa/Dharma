@@ -2,16 +2,17 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp2.1</TargetFramework>
-    <RootNamespace>Dharma.LoggingBlock.Component.Tests</RootNamespace>
+    <RootNamespace>Dharma.Dharma.LoggingBlock.Component.Tests</RootNamespace>
   </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="NUnit" Version="3.10.1" />
     <PackageReference Include="Moq" Version="4.9.0" />
+    <PackageReference Include="NUnit3TestAdapter" Version="3.10.0" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\..\Core\Dharma.Core.csproj" />
-    <ProjectReference Include="..\Commands\LoggingBlock.Components.Commands.csproj" />
-    <ProjectReference Include="..\Queries\LoggingBlock.Components.Queries.csproj" />
+    <ProjectReference Include="..\Commands\Dharma.LoggingBlock.Components.Commands.csproj" />
+    <ProjectReference Include="..\Queries\Dharma.LoggingBlock.Components.Queries.csproj" />
   </ItemGroup>
 </Project>

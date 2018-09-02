@@ -4,11 +4,8 @@
 //       Sales Alencar <lopesdealencar@gmail.com>
 //
 // Copyright (c) 2018 MIT
-using System.Runtime.CompilerServices;
 using Dharma.LoggingBlock.Models;
 
-[assembly: InternalsVisibleTo("LoggingBlock.Implementation")]
-[assembly: InternalsVisibleTo("LoggingBlock")]
 namespace Dharma.LoggingBlock.Interfaces
 {
 	internal interface ILoggingCommands

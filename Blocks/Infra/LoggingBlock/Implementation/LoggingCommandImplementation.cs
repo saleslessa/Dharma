@@ -4,12 +4,11 @@
 //       Sales Alencar <lopesdealencar@gmail.com>
 //
 // Copyright (c) 2018 MIT
-using System.Runtime.CompilerServices;
 using Dharma.LoggingBlock.Components.Command.Commands;
 using Dharma.LoggingBlock.Interfaces;
 using Dharma.LoggingBlock.Models;
 
-[assembly: InternalsVisibleTo("LoggingBlock")]
+
 namespace Dharma.LoggingBlock.Implementation
 {
 

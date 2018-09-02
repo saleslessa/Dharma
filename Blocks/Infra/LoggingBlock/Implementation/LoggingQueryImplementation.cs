@@ -7,14 +7,12 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Runtime.CompilerServices;
 using Dharma.LoggingBlock.Components.Queries;
 using Dharma.LoggingBlock.Interfaces;
 using Dharma.LoggingBlock.Models;
 using MongoDB.Driver;
 
-[assembly: InternalsVisibleTo("LoggingBlock")]
-namespace LoggingBlock.Implementation
+namespace Dharma.LoggingBlock.Implementation
 {	
 	internal class LoggingQueryImplementation : ILoggingQueries
 	{

@@ -7,15 +7,8 @@
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
-using System.Runtime.CompilerServices;
 using Dharma.Core;
 
-[assembly: InternalsVisibleTo("LoggingBlock.Components.Commands")]
-[assembly: InternalsVisibleTo("LoggingBlock.Components.Queries")]
-[assembly: InternalsVisibleTo("LoggingBlock.Interfaces")]
-[assembly: InternalsVisibleTo("LoggingBlock.Implementation")]
-[assembly: InternalsVisibleTo("LoggingBlock")]
-[assembly: InternalsVisibleTo("LoggingBlock.Component.Tests")]
 namespace Dharma.LoggingBlock.Models
 {
 	

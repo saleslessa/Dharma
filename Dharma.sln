@@ -1,8 +1,6 @@
 
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infra", "Infra", "{1628A6B9-5338-47E6-8486-848180896A08}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{63D7D4DA-FD14-484D-AA0B-E3ACA8408DCE}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dharma.Core", "Blocks\Infra\Core\Dharma.Core.csproj", "{8FA25359-AAB3-42D4-9610-304D285B1BDB}"
@@ -19,25 +17,25 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{4CF7EC3A
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Implementation", "Implementation", "{DE5B21B0-C4A9-4A26-A7CE-B8410632F1E3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LoggingBlock.Implementation", "Blocks\Infra\LoggingBlock\Implementation\LoggingBlock.Implementation.csproj", "{A6818769-68F1-457C-8F34-0C154FA8D71B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dharma.LoggingBlock.Implementation", "Blocks\Infra\LoggingBlock\Implementation\Dharma.LoggingBlock.Implementation.csproj", "{A6818769-68F1-457C-8F34-0C154FA8D71B}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Models", "Models", "{A0A074A9-562B-4FBB-85B8-DB21E2F3EF47}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LoggingBlock.Models", "Blocks\Infra\LoggingBlock\Models\Logging.Models\LoggingBlock.Models.csproj", "{050D3F43-0EF6-44E8-8489-EF8E4634614D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dharma.LoggingBlock.Models", "Blocks\Infra\LoggingBlock\Models\Logging.Models\Dharma.LoggingBlock.Models.csproj", "{050D3F43-0EF6-44E8-8489-EF8E4634614D}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Components", "Components", "{5231A652-0F61-498B-ADCB-A01850A924C0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LoggingBlock.Components.Commands", "Blocks\Infra\LoggingBlock\Components\Commands\LoggingBlock.Components.Commands.csproj", "{67B765DD-6FFF-4A64-977E-576871AA4C41}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dharma.LoggingBlock.Components.Commands", "Blocks\Infra\LoggingBlock\Components\Commands\Dharma.LoggingBlock.Components.Commands.csproj", "{67B765DD-6FFF-4A64-977E-576871AA4C41}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LoggingBlock.Components.Queries", "Blocks\Infra\LoggingBlock\Components\Queries\LoggingBlock.Components.Queries.csproj", "{BFBCEB71-2F99-406F-9C76-150C2C2A6454}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dharma.LoggingBlock.Components.Queries", "Blocks\Infra\LoggingBlock\Components\Queries\Dharma.LoggingBlock.Components.Queries.csproj", "{BFBCEB71-2F99-406F-9C76-150C2C2A6454}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LoggingBlock.Component.Tests", "Blocks\Infra\LoggingBlock\Components\Tests\LoggingBlock.Component.Tests.csproj", "{F0B3F2F2-011F-4EB1-841D-001701F87CAC}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dharma.LoggingBlock.Component.Tests", "Blocks\Infra\LoggingBlock\Components\Tests\Dharma.LoggingBlock.Component.Tests.csproj", "{F0B3F2F2-011F-4EB1-841D-001701F87CAC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LoggingBlock", "Blocks\Infra\LoggingBlock\Public\LoggingBlock.csproj", "{C3E9FB25-B27A-4BB0-8F48-2F9C356B99F4}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dharma.LoggingBlock", "Blocks\Infra\LoggingBlock\Public\Dharma.LoggingBlock.csproj", "{C3E9FB25-B27A-4BB0-8F48-2F9C356B99F4}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Interfaces", "Interfaces", "{CFA0966A-9FAA-4ED7-A011-E56159554773}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LoggingBlock.Interfaces", "Blocks\Infra\LoggingBlock\Interfaces\LoggingBlock.Interfaces.csproj", "{56982044-5FDE-42AF-964D-BC3744C8DC15}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dharma.LoggingBlock.Interfaces", "Blocks\Infra\LoggingBlock\Interfaces\Dharma.LoggingBlock.Interfaces.csproj", "{56982044-5FDE-42AF-964D-BC3744C8DC15}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Blocks", "Blocks", "{3D29A914-C5E2-4708-94D5-E93E52957CAB}"
 EndProject
@@ -69,15 +67,25 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Public", "Public", "{562806
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{48CA8EC3-DD4E-4CF9-AABB-836F41E8B109}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrganizationBlock.Components.Commands", "Blocks\OrganizationBlock\Components\Commands\OrganizationBlock.Components.Commands.csproj", "{D6230EE0-2146-4704-990D-D44589D8B624}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dharma.OrganizationBlock.Components.Commands", "Blocks\OrganizationBlock\Components\Commands\Dharma.OrganizationBlock.Components.Commands.csproj", "{D6230EE0-2146-4704-990D-D44589D8B624}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrganizationBlock.Components.Queries", "Blocks\OrganizationBlock\Components\Queries\OrganizationBlock.Components.Queries.csproj", "{59E480E2-9840-403E-B13D-7F6AC107C4BE}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dharma.OrganizationBlock.Components.Queries", "Blocks\OrganizationBlock\Components\Queries\Dharma.OrganizationBlock.Components.Queries.csproj", "{59E480E2-9840-403E-B13D-7F6AC107C4BE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrganizationBlock.Tests", "Blocks\OrganizationBlock\Components\Tests\OrganizationBlock.Tests.csproj", "{B330A90C-B120-4EC5-ABD7-53ADB75DE8F5}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dharma.OrganizationBlock.Tests", "Blocks\OrganizationBlock\Components\Tests\Dharma.OrganizationBlock.Tests.csproj", "{B330A90C-B120-4EC5-ABD7-53ADB75DE8F5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrganizationBlock.Models", "Blocks\OrganizationBlock\Models\OrganizationBlock.Models.csproj", "{141F36DD-B872-4BE7-9A0F-87E412981332}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dharma.OrganizationBlock.Models", "Blocks\OrganizationBlock\Models\Dharma.OrganizationBlock.Models.csproj", "{141F36DD-B872-4BE7-9A0F-87E412981332}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ItemsBlock.Models", "Blocks\ItemsBlock\Models\ItemsBlock.Models.csproj", "{141396A9-43B0-4DFD-9983-EA8EA87E75B3}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dharma.ItemsBlock.Models", "Blocks\ItemsBlock\Models\Models\Dharma.ItemsBlock.Models.csproj", "{141396A9-43B0-4DFD-9983-EA8EA87E75B3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dharma.ItemsBlock.Components.Queries", "Blocks\ItemsBlock\Components\Queries\Dharma.ItemsBlock.Components.Queries.csproj", "{8AC1CD09-7DDB-4B18-B5CB-39ECF504C680}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dharma.ItemsBlock.Components.Commands", "Blocks\ItemsBlock\Components\Commands\Dharma.ItemsBlock.Components.Commands.csproj", "{399E100C-86E9-461C-9060-5341C62AB172}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dharma.ItemsBlock.Components.Tests", "Blocks\ItemsBlock\Components\Tests\Dharma.ItemsBlock.Components.Tests.csproj", "{0945468E-7925-4F57-9DDF-8DC85ABE1AD5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dharma.ItemsBlock.Models.Tests", "Blocks\ItemsBlock\Models\Tests\Dharma.ItemsBlock.Models.Tests.csproj", "{2E55834B-4682-41F8-871B-DB6ED1759A34}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infra", "Infra", "{3EE496A1-5955-4918-9FCF-0AE81131B50C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -137,11 +145,27 @@ Global
 		{141396A9-43B0-4DFD-9983-EA8EA87E75B3}.Debug|x86.Build.0 = Debug|Any CPU
 		{141396A9-43B0-4DFD-9983-EA8EA87E75B3}.Release|x86.ActiveCfg = Release|Any CPU
 		{141396A9-43B0-4DFD-9983-EA8EA87E75B3}.Release|x86.Build.0 = Release|Any CPU
+		{8AC1CD09-7DDB-4B18-B5CB-39ECF504C680}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{8AC1CD09-7DDB-4B18-B5CB-39ECF504C680}.Debug|x86.Build.0 = Debug|Any CPU
+		{8AC1CD09-7DDB-4B18-B5CB-39ECF504C680}.Release|x86.ActiveCfg = Release|Any CPU
+		{8AC1CD09-7DDB-4B18-B5CB-39ECF504C680}.Release|x86.Build.0 = Release|Any CPU
+		{399E100C-86E9-461C-9060-5341C62AB172}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{399E100C-86E9-461C-9060-5341C62AB172}.Debug|x86.Build.0 = Debug|Any CPU
+		{399E100C-86E9-461C-9060-5341C62AB172}.Release|x86.ActiveCfg = Release|Any CPU
+		{399E100C-86E9-461C-9060-5341C62AB172}.Release|x86.Build.0 = Release|Any CPU
+		{0945468E-7925-4F57-9DDF-8DC85ABE1AD5}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{0945468E-7925-4F57-9DDF-8DC85ABE1AD5}.Debug|x86.Build.0 = Debug|Any CPU
+		{0945468E-7925-4F57-9DDF-8DC85ABE1AD5}.Release|x86.ActiveCfg = Release|Any CPU
+		{0945468E-7925-4F57-9DDF-8DC85ABE1AD5}.Release|x86.Build.0 = Release|Any CPU
+		{2E55834B-4682-41F8-871B-DB6ED1759A34}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{2E55834B-4682-41F8-871B-DB6ED1759A34}.Debug|x86.Build.0 = Debug|Any CPU
+		{2E55834B-4682-41F8-871B-DB6ED1759A34}.Release|x86.ActiveCfg = Release|Any CPU
+		{2E55834B-4682-41F8-871B-DB6ED1759A34}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{63D7D4DA-FD14-484D-AA0B-E3ACA8408DCE} = {1628A6B9-5338-47E6-8486-848180896A08}
+		{63D7D4DA-FD14-484D-AA0B-E3ACA8408DCE} = {3EE496A1-5955-4918-9FCF-0AE81131B50C}
 		{8FA25359-AAB3-42D4-9610-304D285B1BDB} = {63D7D4DA-FD14-484D-AA0B-E3ACA8408DCE}
-		{7F420E46-8317-4A0C-AAF1-0F0FD13A210D} = {1628A6B9-5338-47E6-8486-848180896A08}
+		{7F420E46-8317-4A0C-AAF1-0F0FD13A210D} = {3EE496A1-5955-4918-9FCF-0AE81131B50C}
 		{968FB61A-3E54-454D-BF19-D1AF120E3EB6} = {7F420E46-8317-4A0C-AAF1-0F0FD13A210D}
 		{4CF7EC3A-5BCA-4E76-899E-A4BB599ACAE5} = {7F420E46-8317-4A0C-AAF1-0F0FD13A210D}
 		{DE5B21B0-C4A9-4A26-A7CE-B8410632F1E3} = {7F420E46-8317-4A0C-AAF1-0F0FD13A210D}
@@ -174,5 +198,10 @@ Global
 		{B330A90C-B120-4EC5-ABD7-53ADB75DE8F5} = {DE4CC8FB-DE79-40B3-99AD-1E937CED95BE}
 		{141F36DD-B872-4BE7-9A0F-87E412981332} = {4392B7B7-70EA-4AA2-8BD1-D517ED9B13B2}
 		{141396A9-43B0-4DFD-9983-EA8EA87E75B3} = {4526E079-6876-41B1-8C45-CBCF7EAE2525}
+		{8AC1CD09-7DDB-4B18-B5CB-39ECF504C680} = {456AF3F4-0EE4-410D-81E5-E76E0657EC2B}
+		{399E100C-86E9-461C-9060-5341C62AB172} = {456AF3F4-0EE4-410D-81E5-E76E0657EC2B}
+		{0945468E-7925-4F57-9DDF-8DC85ABE1AD5} = {456AF3F4-0EE4-410D-81E5-E76E0657EC2B}
+		{2E55834B-4682-41F8-871B-DB6ED1759A34} = {4526E079-6876-41B1-8C45-CBCF7EAE2525}
+		{3EE496A1-5955-4918-9FCF-0AE81131B50C} = {3D29A914-C5E2-4708-94D5-E93E52957CAB}
 	EndGlobalSection
 EndGlobal

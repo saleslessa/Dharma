@@ -5,13 +5,10 @@
 //
 // Copyright (c) 2018 MIT
 using System;
-using System.Runtime.CompilerServices;
 using Dharma.Core;
 using Dharma.LoggingBlock.Components.Commands;
 using Dharma.LoggingBlock.Models;
 
-[assembly: InternalsVisibleTo("LoggingBlock.Component.Tests")]
-[assembly: InternalsVisibleTo("LoggingBlock.Implementation")]
 namespace Dharma.LoggingBlock.Components.Command.Commands
 {
 	internal class AddLoggingCommand : BaseCommand<LoggingBlockModel>

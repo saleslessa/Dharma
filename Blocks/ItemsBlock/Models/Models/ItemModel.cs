@@ -8,9 +8,9 @@
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using Dharma.Core;
-using ItemsBlock.Models.Validations;
+using Dharma.ItemsBlock.Models.Validations;
 
-namespace ItemsBlock.Models
+namespace Dharma.ItemsBlock.Models
 {
 	internal class ItemModel : BaseModel
 	{
@@ -20,19 +20,33 @@ namespace ItemsBlock.Models
 
 		public ItemType Type { get; set; }
 
-		public uint? Quantity { get; set; }
+		public uint? Amount { get; set; }
 
 		public IEnumerable<string> Categories { get; set; }
 
+		public bool Active { get; set; }
+
 		public ItemModel()
 		{
+			Active = true;
 			Categories = new List<string>();
+		}
+
+		public ItemModel(string name, ItemType type, uint? amount
+		                 , IEnumerable<string> categories, bool active)
+		{
+			Name = name;
+			Type = type;
+			Amount = amount;
+			Categories = categories;
+			Active = active;
 		}
 
 		protected override void Validate()
 		{
 			new ItemHasValidNameValidation().Validate(this);
-			new ItemHasValidTypeAndQuantity().Validate(this);
+			new ItemHasValidTypeAndAmountValidation().Validate(this);
+			new ItemHasNoDuplicateCategoriesValidation().Validate(this);
 		}
 	}
 }

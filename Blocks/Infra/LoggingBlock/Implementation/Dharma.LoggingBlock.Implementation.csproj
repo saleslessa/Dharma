@@ -24,9 +24,9 @@
     <Compile Remove="Logging.Tests\obj\Debug\netcoreapp2.1\Logging.Tests.AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Interfaces\LoggingBlock.Interfaces.csproj" />
-    <ProjectReference Include="..\Components\Commands\LoggingBlock.Components.Commands.csproj" />
-    <ProjectReference Include="..\Components\Queries\LoggingBlock.Components.Queries.csproj" />
+    <ProjectReference Include="..\Interfaces\Dharma.LoggingBlock.Interfaces.csproj" />
+    <ProjectReference Include="..\Components\Commands\Dharma.LoggingBlock.Components.Commands.csproj" />
+    <ProjectReference Include="..\Components\Queries\Dharma.LoggingBlock.Components.Queries.csproj" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="MongoDB.Driver" Version="2.7.0" />

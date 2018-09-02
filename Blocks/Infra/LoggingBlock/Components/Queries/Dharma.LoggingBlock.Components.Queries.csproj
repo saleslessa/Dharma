@@ -24,6 +24,6 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\..\Core\Dharma.Core.csproj" />
-    <ProjectReference Include="..\..\Models\Logging.Models\LoggingBlock.Models.csproj" />
+    <ProjectReference Include="..\..\Models\Logging.Models\Dharma.LoggingBlock.Models.csproj" />
   </ItemGroup>
 </Project>

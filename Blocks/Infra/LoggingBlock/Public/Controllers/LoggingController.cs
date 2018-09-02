@@ -12,11 +12,10 @@ using Dharma.Core.Gateway;
 using Dharma.LoggingBlock.Implementation;
 using Dharma.LoggingBlock.Interfaces;
 using Dharma.LoggingBlock.Models;
-using LoggingBlock.Implementation;
 using LoggingBlock.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 
-namespace LoggingBlock.Controllers
+namespace Dharma.LoggingBlock.Controllers
 {
 	/// <summary>
 	/// Logging Block. Responsible for logging information for other blocks provided through a RESTful API 

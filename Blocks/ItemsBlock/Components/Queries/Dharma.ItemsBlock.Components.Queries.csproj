@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+    <RootNamespace>Dharma.ItemsBlock.Components.Queries</RootNamespace>
+    <AssemblyName>Dharma.ItemsBlock.Components.Queries</AssemblyName>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Infra\Core\Dharma.Core.csproj" />
+    <ProjectReference Include="..\..\Models\Models\Dharma.ItemsBlock.Models.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Update="ItemsBlockQuery.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>ItemsBlockQuery.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="ItemsBlockQuery.Designer.cs">
+      <DependentUpon>ItemsBlockQuery.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+</Project>

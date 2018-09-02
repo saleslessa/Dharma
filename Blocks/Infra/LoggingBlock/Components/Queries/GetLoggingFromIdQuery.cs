@@ -6,12 +6,9 @@
 // Copyright (c) 2018 MIT
 using System;
 using System.Linq.Expressions;
-using System.Runtime.CompilerServices;
 using Dharma.Core;
 using Dharma.LoggingBlock.Models;
 
-[assembly: InternalsVisibleTo("LoggingBlock.Component.Tests")]
-[assembly: InternalsVisibleTo("LoggingBlock.Implementation")]
 namespace Dharma.LoggingBlock.Components.Queries
 {
 

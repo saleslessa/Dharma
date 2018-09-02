@@ -8,13 +8,14 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
+using Dharma.Core;
 using Dharma.LoggingBlock.Components.Queries;
 using Dharma.LoggingBlock.Models;
 using NUnit.Framework;
 
 namespace Dharma.LoggingBlock.Component.Tests
 {
-	[TestFixture(Category = "UnitTest")]
+	[TestFixture(Category = "Unit Test")]
 	public class QueriesTests
 	{
 		[Test]

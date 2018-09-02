@@ -1,0 +1,31 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Validations\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="Validations\BaseValidation.cs" />
+    <Compile Remove="ItemCategory.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Infra\Core\Dharma.Core.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Update="ItemResources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>ItemResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="ItemResources.Designer.cs">
+      <DependentUpon>ItemResources.resx</DependentUpon>
+    </Compile>
+    <Compile Update="ItemResources.Designer.cs">
+      <DependentUpon>ItemResources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+</Project>

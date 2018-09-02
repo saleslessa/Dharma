@@ -1,10 +1,10 @@
 <a name='assembly'></a>
-# LoggingBlock
+# Dharma.LoggingBlock
 
 ## Contents
 
 - [LoggingBlockViewModel](#T-LoggingBlock-ViewModels-LoggingBlockViewModel 'LoggingBlock.ViewModels.LoggingBlockViewModel')
-- [LoggingController](#T-LoggingBlock-Controllers-LoggingController 'LoggingBlock.Controllers.LoggingController')
+- [LoggingController](#T-Dharma-LoggingBlock-Controllers-LoggingController 'Dharma.LoggingBlock.Controllers.LoggingController')
 
 <a name='T-LoggingBlock-ViewModels-LoggingBlockViewModel'></a>
 ## LoggingBlockViewModel `type`
@@ -23,12 +23,12 @@ Model that represents a logging information to client blocks. The structure of t
 | Type | string | Type of message | Possible options are: `Info`, `Warning`, `Error`or `Fatal`|
 | BlockOrigin | string | Client block name | AuthenticationBlock, ChatBlock, etc. |
 
-<a name='T-LoggingBlock-Controllers-LoggingController'></a>
+<a name='T-Dharma-LoggingBlock-Controllers-LoggingController'></a>
 ## LoggingController `type`
 
 ##### Namespace
 
-LoggingBlock.Controllers
+Dharma.LoggingBlock.Controllers
 
 ##### Summary
 
