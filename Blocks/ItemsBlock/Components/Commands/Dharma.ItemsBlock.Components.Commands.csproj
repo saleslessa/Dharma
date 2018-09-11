@@ -7,4 +7,19 @@
   <ItemGroup>
     <Compile Remove="Class1.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Infra\Core\Dharma.Core.csproj" />
+    <ProjectReference Include="..\..\Models\Models\Dharma.ItemsBlock.Models.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Update="Properties\ItemsBlockCommands.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>ItemsBlockCommands.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="Properties\ItemsBlockCommands.Designer.cs">
+      <DependentUpon>ItemsBlockCommands.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
 </Project>

@@ -13,12 +13,12 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>LoggingBlock.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Update="LoggingBlockQuery.resx">
+    <EmbeddedResource Condition=" '$(EnableDefaultEmbeddedResourceItems)' == 'true' " Update="Properties\LoggingBlockQuery.resx">
       <LastGenOutput>LoggingBlock.Designer.cs</LastGenOutput>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <Compile Update="LoggingBlock.Designer.cs">
+    <Compile Condition=" '$(EnableDefaultCompileItems)' == 'true' " Update="Properties\LoggingBlock.Designer.cs">
       <DependentUpon>LoggingBlockQuery.resx</DependentUpon>
     </Compile>
   </ItemGroup>

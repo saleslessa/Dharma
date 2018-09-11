@@ -6,14 +6,11 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Commands\" />
-  </ItemGroup>
-  <ItemGroup>
     <ProjectReference Include="..\..\..\Core\Dharma.Core.csproj" />
     <ProjectReference Include="..\..\Models\Logging.Models\Dharma.LoggingBlock.Models.csproj" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Update="LoggingBlockCommand.resx">
+    <EmbeddedResource Condition=" '$(EnableDefaultEmbeddedResourceItems)' == 'true' " Update="Properties\LoggingBlockCommand.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>LoggingBlockCommand.Designer.cs</LastGenOutput>
     </EmbeddedResource>
@@ -22,7 +19,7 @@
     <Compile Remove="LoggingCommandHandler.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Update="LoggingBlockCommand.Designer.cs">
+    <Compile Condition=" '$(EnableDefaultCompileItems)' == 'true' " Update="Properties\LoggingBlockCommand.Designer.cs">
       <DependentUpon>LoggingBlockCommand.resx</DependentUpon>
     </Compile>
   </ItemGroup>

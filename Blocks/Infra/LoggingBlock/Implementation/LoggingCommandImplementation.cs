@@ -4,7 +4,7 @@
 //       Sales Alencar <lopesdealencar@gmail.com>
 //
 // Copyright (c) 2018 MIT
-using Dharma.LoggingBlock.Components.Command.Commands;
+using Dharma.LoggingBlock.Components.Commands;
 using Dharma.LoggingBlock.Interfaces;
 using Dharma.LoggingBlock.Models;
 

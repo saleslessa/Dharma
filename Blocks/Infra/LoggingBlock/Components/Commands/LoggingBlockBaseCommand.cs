@@ -1,19 +1,19 @@
-﻿// AddLoggingCommand.cs
+﻿// LoggingBlockBaseCommand.cs
 //
 // Author:
 //       Sales Alencar <lopesdealencar@gmail.com>
 //
 // Copyright (c) 2018 MIT
+//
 using System;
 using Dharma.Core;
-using Dharma.LoggingBlock.Components.Commands;
 using Dharma.LoggingBlock.Models;
 
-namespace Dharma.LoggingBlock.Components.Command.Commands
+namespace Dharma.LoggingBlock.Components.Commands
 {
-	internal class AddLoggingCommand : BaseCommand<LoggingBlockModel>
+	internal abstract class LoggingBlockBaseCommand : BaseCommand<LoggingBlockModel>
 	{
-		public AddLoggingCommand(LoggingBlockModel model) : base(model)
+		public LoggingBlockBaseCommand(LoggingBlockModel model) : base(model)
 		{
 		}
 
@@ -26,18 +26,5 @@ namespace Dharma.LoggingBlock.Components.Command.Commands
 		protected override string user => LoggingBlockCommand.User;
 
 		protected override string pwd => LoggingBlockCommand.Pwd;
-
-
-		public override void Run()
-		{
-			try
-			{
-				GetConnection().InsertOne(_model);
-			}
-			catch (Exception ex)
-			{
-				_model.ValidationResult.Add(ex.Message);
-			}
-		}
 	}
 }

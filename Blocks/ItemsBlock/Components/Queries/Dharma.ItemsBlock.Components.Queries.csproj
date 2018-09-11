@@ -11,13 +11,13 @@
     <ProjectReference Include="..\..\Models\Models\Dharma.ItemsBlock.Models.csproj" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Update="ItemsBlockQuery.resx">
+    <EmbeddedResource Condition=" '$(EnableDefaultEmbeddedResourceItems)' == 'true' " Update="Properties\ItemsBlockQuery.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>ItemsBlockQuery.Designer.cs</LastGenOutput>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <Compile Update="ItemsBlockQuery.Designer.cs">
+    <Compile Condition=" '$(EnableDefaultCompileItems)' == 'true' " Update="Properties\ItemsBlockQuery.Designer.cs">
       <DependentUpon>ItemsBlockQuery.resx</DependentUpon>
     </Compile>
   </ItemGroup>

@@ -74,6 +74,7 @@ namespace ItemsBlock.Models.Tests
 			Assert.True(model.ValidationResult.Errors.Any(t => t.Value == "Category missing"));
 		}
 
+		[Test]
 		public void ItemHasValidTypeAndAmount_Should_HaveValidModelRegardingAmountAndType()
 		{
 			// Arrange
@@ -88,6 +89,7 @@ namespace ItemsBlock.Models.Tests
 
 		}
 
+		[Test]
 		public void ItemHasValidTypeAndAmount_Should_HaveInvalidModelRegardingAmountAndType()
 		{
 			// Arrange

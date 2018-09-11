@@ -12,7 +12,7 @@ using Dharma.LoggingBlock.Models;
 namespace Dharma.LoggingBlock.Components.Queries
 {
 
-	internal class GetLoggingFromIdQuery : BaseQuery<LoggingBlockModel>
+	internal class GetLoggingFromIdQuery : LoggingBlockBaseQuery
 	{
 
 		private readonly string Id;
@@ -23,16 +23,6 @@ namespace Dharma.LoggingBlock.Components.Queries
 		}
 
 		protected override Expression<Func<LoggingBlockModel, bool>> _filter => (t => t.Id == this.Id);
-
-		protected override string server => LoggingBlockQuery.Server;
-
-		protected override int port => Convert.ToInt32(LoggingBlockQuery.Port);
-
-		protected override string database => LoggingBlockQuery.Database;
-
-		protected override string user => LoggingBlockQuery.User;
-
-		protected override string pwd => LoggingBlockQuery.Pwd;
 
 	}
 }
