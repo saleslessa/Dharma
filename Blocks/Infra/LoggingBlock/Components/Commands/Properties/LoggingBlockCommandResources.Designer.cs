@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Dharma.LoggingBlock.Components.Commands {
+namespace Dharma.LoggingBlock.Components.Commands.Properties {
     using System;
     using System.Reflection;
     
@@ -16,21 +16,21 @@ namespace Dharma.LoggingBlock.Components.Commands {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "4.0.0.0")]
     [System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    internal class LoggingBlockCommand {
+    internal class LoggingBlockCommandResources {
         
         private static System.Resources.ResourceManager resourceMan;
         
         private static System.Globalization.CultureInfo resourceCulture;
         
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
-        internal LoggingBlockCommand() {
+        internal LoggingBlockCommandResources() {
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
         internal static System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.Equals(null, resourceMan)) {
-                    System.Resources.ResourceManager temp = new System.Resources.ResourceManager("Dharma.LoggingBlock.Components.Commands.LoggingBlockCommand", typeof(LoggingBlockCommand).Assembly);
+                    System.Resources.ResourceManager temp = new System.Resources.ResourceManager("Dharma.LoggingBlock.Components.Commands.Properties.LoggingBlockCommandResources", typeof(LoggingBlockCommandResources).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;

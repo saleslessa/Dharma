@@ -4,24 +4,24 @@
     "windowsAuthentication": false,
     "anonymousAuthentication": true,
     "iisExpress": {
-      "applicationUrl": "http://localhost:1281",
-      "sslPort": 44300
+      "applicationUrl": "http://localhost:9610",
+      "sslPort": 44313
     }
   },
   "profiles": {
     "IIS Express": {
       "commandName": "IISExpress",
       "launchBrowser": true,
-      "launchUrl": "api/Logging",
+      "launchUrl": "api/Items",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
     },
-    "LoggingBlock": {
+    "Dharma.ItemsBlock": {
       "commandName": "Project",
       "launchBrowser": true,
-      "launchUrl": "api/Logging",
-      "applicationUrl": "https://localhost:8081;http://localhost:8080",
+      "launchUrl": "api/Items",
+      "applicationUrl": "https://localhost:5001;http://localhost:5000",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       }

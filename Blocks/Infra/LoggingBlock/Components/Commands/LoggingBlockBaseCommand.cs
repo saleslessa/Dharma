@@ -7,6 +7,7 @@
 //
 using System;
 using Dharma.Core;
+using Dharma.LoggingBlock.Components.Commands.Properties;
 using Dharma.LoggingBlock.Models;
 
 namespace Dharma.LoggingBlock.Components.Commands
@@ -17,14 +18,14 @@ namespace Dharma.LoggingBlock.Components.Commands
 		{
 		}
 
-		protected override string server => LoggingBlockCommand.Server;
+		protected override string server => LoggingBlockCommandResources.Server;
 
-		protected override int port => Convert.ToInt32(LoggingBlockCommand.Port);
+		protected override int port => Convert.ToInt32(LoggingBlockCommandResources.Port);
 
-		protected override string database => LoggingBlockCommand.Database;
+		protected override string database => LoggingBlockCommandResources.Database;
 
-		protected override string user => LoggingBlockCommand.User;
+		protected override string user => LoggingBlockCommandResources.User;
 
-		protected override string pwd => LoggingBlockCommand.Pwd;
+		protected override string pwd => LoggingBlockCommandResources.Pwd;
 	}
 }

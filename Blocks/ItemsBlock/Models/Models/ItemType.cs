@@ -11,11 +11,8 @@ namespace Dharma.ItemsBlock.Models
 {
 	internal enum ItemType
 	{
-		[Description("Quantity")]
 		Amount,
-		[Description("Hour")]
 		Hour,
-		[Description("Service")]
 		Service
 	}
 }

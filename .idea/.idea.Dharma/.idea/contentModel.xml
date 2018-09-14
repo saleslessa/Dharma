@@ -1,0 +1,393 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="$USER_HOME$/.nuget/packages/nlog.config/4.5.9/contentFiles/any/any/nlog.config" t="Include" />
+    <e p="$USER_HOME$/.nuget/packages/nunit3testadapter/3.10.0/build/netcoreapp1.0/Mono.Cecil.dll" t="Include" />
+    <e p="$USER_HOME$/.nuget/packages/nunit3testadapter/3.10.0/build/netcoreapp1.0/nunit.engine.netstandard.dll" t="Include" />
+    <e p="$USER_HOME$/.nuget/packages/nunit3testadapter/3.10.0/build/netcoreapp1.0/NUnit3.TestAdapter.dll" t="Include" />
+    <e p="$USER_HOME$/.nuget/packages/nunit3testadapter/3.10.0/build/netcoreapp1.0/NUnit3.TestAdapter.pdb" t="Include" />
+    <e p="$PROJECT_DIR$" t="IncludeFlat">
+      <e p="Blocks" t="Include">
+        <e p="Infra" t="Include">
+          <e p="Core" t="IncludeRecursive">
+            <e p="BaseCommand.cs" t="Include" />
+            <e p="BaseConnection.cs" t="Include" />
+            <e p="BaseModel.cs" t="Include" />
+            <e p="BaseQuery.cs" t="Include" />
+            <e p="BaseValidation.cs" t="Include" />
+            <e p="bin" t="ExcludeRecursive" />
+            <e p="Dharma.Core.csproj" t="IncludeRecursive" />
+            <e p="Gateway" t="Include">
+              <e p="Gateway.cs" t="Include" />
+              <e p="GatewayModel.cs" t="Include" />
+              <e p="GatewayQuery.cs" t="Include" />
+              <e p="GatewayResources.Designer.cs" t="Include" />
+              <e p="GatewayResources.resx" t="Include" />
+              <e p="HttpVerbsEnum.cs" t="Include" />
+            </e>
+            <e p="obj" t="ExcludeRecursive">
+              <e p="Debug" t="Include">
+                <e p="netcoreapp2.1" t="Include">
+                  <e p="Dharma.Core.AssemblyInfo.cs" t="Include" />
+                </e>
+              </e>
+            </e>
+            <e p="TestType.cs" t="Include" />
+            <e p="ValidationResult.cs" t="Include" />
+          </e>
+          <e p="LoggingBlock" t="Include">
+            <e p="Components" t="Include">
+              <e p="Commands" t="IncludeRecursive">
+                <e p="AddLoggingCommand.cs" t="Include" />
+                <e p="bin" t="ExcludeRecursive" />
+                <e p="Dharma.LoggingBlock.Components.Commands.csproj" t="IncludeRecursive" />
+                <e p="LoggingBlockBaseCommand.cs" t="Include" />
+                <e p="obj" t="ExcludeRecursive">
+                  <e p="Debug" t="Include">
+                    <e p="netcoreapp2.1" t="Include">
+                      <e p="Dharma.LoggingBlock.Components.Commands.AssemblyInfo.cs" t="Include" />
+                    </e>
+                  </e>
+                </e>
+                <e p="Properties" t="Include">
+                  <e p="AssemblyInfo.cs" t="Include" />
+                  <e p="LoggingBlockCommandResources.Designer.cs" t="Include" />
+                  <e p="LoggingBlockCommandResources.resx" t="Include" />
+                </e>
+              </e>
+              <e p="Queries" t="IncludeRecursive">
+                <e p="bin" t="ExcludeRecursive" />
+                <e p="Dharma.LoggingBlock.Components.Queries.csproj" t="IncludeRecursive" />
+                <e p="GetLoggingFromIdQuery.cs" t="Include" />
+                <e p="ListAllLoggingFromTypeQuery.cs" t="Include" />
+                <e p="ListLoggingFromBlockNameAndTypeQuery.cs" t="Include" />
+                <e p="ListLoggingFromBlockQuery.cs" t="Include" />
+                <e p="LoggingBlockBaseQuery.cs" t="Include" />
+                <e p="obj" t="ExcludeRecursive">
+                  <e p="Debug" t="Include">
+                    <e p="netcoreapp2.1" t="Include">
+                      <e p="Dharma.LoggingBlock.Components.Queries.AssemblyInfo.cs" t="Include" />
+                    </e>
+                  </e>
+                </e>
+                <e p="Properties" t="Include">
+                  <e p="AssemblyInfo.cs" t="Include" />
+                  <e p="LoggingBlock.Designer.cs" t="Include" />
+                  <e p="LoggingBlockQuery.resx" t="Include" />
+                </e>
+              </e>
+              <e p="Tests" t="IncludeRecursive">
+                <e p="bin" t="ExcludeRecursive" />
+                <e p="CommandsTests.cs" t="Include" />
+                <e p="Dharma.LoggingBlock.Component.Tests.csproj" t="IncludeRecursive" />
+                <e p="obj" t="ExcludeRecursive">
+                  <e p="Debug" t="Include">
+                    <e p="netcoreapp2.1" t="Include">
+                      <e p="Dharma.LoggingBlock.Component.Tests.AssemblyInfo.cs" t="Include" />
+                      <e p="Dharma.LoggingBlock.Component.Tests.Program.cs" t="Include" />
+                    </e>
+                  </e>
+                </e>
+                <e p="QueriesTests.cs" t="Include" />
+              </e>
+            </e>
+            <e p="DockerFile" t="Include" />
+            <e p="Implementation" t="IncludeRecursive">
+              <e p="bin" t="ExcludeRecursive" />
+              <e p="Dharma.LoggingBlock.Implementation.csproj" t="IncludeRecursive" />
+              <e p="LoggingCommandImplementation.cs" t="Include" />
+              <e p="LoggingQueryImplementation.cs" t="Include" />
+              <e p="obj" t="ExcludeRecursive">
+                <e p="Debug" t="Include">
+                  <e p="netcoreapp2.1" t="Include">
+                    <e p="Dharma.LoggingBlock.Implementation.AssemblyInfo.cs" t="Include" />
+                  </e>
+                </e>
+              </e>
+              <e p="Properties" t="Include">
+                <e p="AssemblyInfo.cs" t="Include" />
+              </e>
+            </e>
+            <e p="Interfaces" t="IncludeRecursive">
+              <e p="bin" t="ExcludeRecursive" />
+              <e p="Dharma.LoggingBlock.Interfaces.csproj" t="IncludeRecursive" />
+              <e p="ILoggingCommands.cs" t="Include" />
+              <e p="ILoggingQueries.cs" t="Include" />
+              <e p="obj" t="ExcludeRecursive">
+                <e p="Debug" t="Include">
+                  <e p="netcoreapp2.1" t="Include">
+                    <e p="Dharma.LoggingBlock.Interfaces.AssemblyInfo.cs" t="Include" />
+                  </e>
+                </e>
+              </e>
+              <e p="Properties" t="Include">
+                <e p="AssemblyInfo.cs" t="Include" />
+              </e>
+            </e>
+            <e p="Models" t="Include">
+              <e p="Logging.Models" t="IncludeRecursive">
+                <e p="bin" t="ExcludeRecursive" />
+                <e p="Dharma.LoggingBlock.Models.csproj" t="IncludeRecursive" />
+                <e p="LoggingBlockModel.cs" t="Include" />
+                <e p="LoggingBlockType.cs" t="Include" />
+                <e p="obj" t="ExcludeRecursive">
+                  <e p="Debug" t="Include">
+                    <e p="netcoreapp2.1" t="Include">
+                      <e p="Dharma.LoggingBlock.Models.AssemblyInfo.cs" t="Include" />
+                    </e>
+                  </e>
+                </e>
+                <e p="Properties" t="Include">
+                  <e p="AssemblyInfo.cs" t="Include" />
+                </e>
+              </e>
+            </e>
+            <e p="Public" t="IncludeRecursive">
+              <e p="appsettings.Development.json" t="Include" />
+              <e p="appsettings.json" t="Include" />
+              <e p="bin" t="ExcludeRecursive" />
+              <e p="Controllers" t="Include">
+                <e p="LoggingController.cs" t="Include" />
+              </e>
+              <e p="Dharma.LoggingBlock.csproj" t="IncludeRecursive" />
+              <e p="obj" t="ExcludeRecursive">
+                <e p="Debug" t="Include">
+                  <e p="netcoreapp2.1" t="Include">
+                    <e p="Dharma.LoggingBlock.AssemblyInfo.cs" t="Include" />
+                  </e>
+                </e>
+              </e>
+              <e p="Program.cs" t="Include" />
+              <e p="Properties" t="Include">
+                <e p="launchSettings.json" t="Include" />
+              </e>
+              <e p="Startup.cs" t="Include" />
+              <e p="ViewModels" t="Include">
+                <e p="LoggingBlockModelExtension.cs" t="Include" />
+                <e p="LoggingBlockViewModel.cs" t="Include" />
+              </e>
+              <e p="wwwroot" t="Include" />
+            </e>
+            <e p="Readme.md" t="Include" />
+            <e p="Tests" t="Include" />
+          </e>
+        </e>
+        <e p="ItemsBlock" t="Include">
+          <e p="Components" t="Include">
+            <e p="Commands" t="IncludeRecursive">
+              <e p="AddItemModelCommand.cs" t="Include" />
+              <e p="bin" t="ExcludeRecursive" />
+              <e p="Dharma.ItemsBlock.Components.Commands.csproj" t="IncludeRecursive" />
+              <e p="ItemsBlockBaseCommand.cs" t="Include" />
+              <e p="obj" t="ExcludeRecursive">
+                <e p="Debug" t="Include">
+                  <e p="netcoreapp2.1" t="Include">
+                    <e p="Dharma.ItemsBlock.Components.Commands.AssemblyInfo.cs" t="Include" />
+                  </e>
+                </e>
+              </e>
+              <e p="Properties" t="Include">
+                <e p="AssemblyInfo.cs" t="Include" />
+                <e p="ItemsBlockCommands.Designer.cs" t="Include" />
+                <e p="ItemsBlockCommands.resx" t="Include" />
+              </e>
+              <e p="UpdateItemModelCommand.cs" t="Include" />
+            </e>
+            <e p="Queries" t="IncludeRecursive">
+              <e p="bin" t="ExcludeRecursive" />
+              <e p="Dharma.ItemsBlock.Components.Queries.csproj" t="IncludeRecursive" />
+              <e p="ItemsBlockBaseQuery.cs" t="Include" />
+              <e p="ListAllItemsQuery.cs" t="Include" />
+              <e p="ListItemsFromCategoryQuery.cs" t="Include" />
+              <e p="ListItemsFromNameQuery.cs" t="Include" />
+              <e p="obj" t="ExcludeRecursive">
+                <e p="Debug" t="Include">
+                  <e p="netcoreapp2.1" t="Include">
+                    <e p="Dharma.ItemsBlock.Components.Queries.AssemblyInfo.cs" t="Include" />
+                  </e>
+                </e>
+              </e>
+              <e p="Properties" t="Include">
+                <e p="AssemblyInfo.cs" t="Include" />
+                <e p="ItemsBlockQuery.Designer.cs" t="Include" />
+                <e p="ItemsBlockQuery.resx" t="Include" />
+              </e>
+            </e>
+            <e p="Tests" t="IncludeRecursive">
+              <e p="bin" t="ExcludeRecursive" />
+              <e p="Dharma.ItemsBlock.Components.Tests.csproj" t="IncludeRecursive" />
+              <e p="obj" t="ExcludeRecursive">
+                <e p="Debug" t="Include">
+                  <e p="netcoreapp2.1" t="Include">
+                    <e p="Dharma.ItemsBlock.Components.Tests.AssemblyInfo.cs" t="Include" />
+                    <e p="Dharma.ItemsBlock.Components.Tests.Program.cs" t="Include" />
+                  </e>
+                </e>
+              </e>
+              <e p="QueriesTests.cs" t="Include" />
+            </e>
+          </e>
+          <e p="Implementation" t="IncludeRecursive">
+            <e p="bin" t="ExcludeRecursive" />
+            <e p="Dharma.ItemsBlock.Implementation.csproj" t="IncludeRecursive" />
+            <e p="ItemsBlockCommands.cs" t="Include" />
+            <e p="ItemsBlockQueries.cs" t="Include" />
+            <e p="obj" t="ExcludeRecursive">
+              <e p="Debug" t="Include">
+                <e p="netcoreapp2.1" t="Include">
+                  <e p="Dharma.ItemsBlock.Implementation.AssemblyInfo.cs" t="Include" />
+                </e>
+              </e>
+            </e>
+            <e p="Properties" t="Include">
+              <e p="AssemblyInfo.cs" t="Include" />
+              <e p="Resources.Designer.cs" t="Include" />
+              <e p="Resources.resx" t="Include" />
+            </e>
+          </e>
+          <e p="Interfaces" t="IncludeRecursive">
+            <e p="bin" t="ExcludeRecursive" />
+            <e p="Dharma.ItemsBlock.Interfaces.csproj" t="IncludeRecursive" />
+            <e p="IItemsBlockCommands.cs" t="Include" />
+            <e p="IItemsBlockQueries.cs" t="Include" />
+            <e p="obj" t="ExcludeRecursive">
+              <e p="Debug" t="Include">
+                <e p="netcoreapp2.1" t="Include">
+                  <e p="Dharma.ItemsBlock.Interfaces.AssemblyInfo.cs" t="Include" />
+                </e>
+              </e>
+            </e>
+            <e p="Properties" t="Include">
+              <e p="AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+          <e p="Models" t="Include">
+            <e p="Models" t="IncludeRecursive">
+              <e p="bin" t="ExcludeRecursive" />
+              <e p="Dharma.ItemsBlock.Models.csproj" t="IncludeRecursive" />
+              <e p="ItemModel.cs" t="Include" />
+              <e p="ItemType.cs" t="Include" />
+              <e p="obj" t="ExcludeRecursive">
+                <e p="Debug" t="Include">
+                  <e p="netcoreapp2.1" t="Include">
+                    <e p="Dharma.ItemsBlock.Models.AssemblyInfo.cs" t="Include" />
+                  </e>
+                </e>
+              </e>
+              <e p="Properties" t="Include">
+                <e p="AssemblyInfo.cs" t="Include" />
+                <e p="ItemResources.Designer.cs" t="Include" />
+                <e p="ItemResources.resx" t="Include" />
+              </e>
+              <e p="Validations" t="Include">
+                <e p="ItemHasNoDuplicateCategoriesValidation.cs" t="Include" />
+                <e p="ItemHasValidNameValidation.cs" t="Include" />
+                <e p="ItemHasValidTypeAndAmountValidation.cs" t="Include" />
+              </e>
+            </e>
+            <e p="Tests" t="IncludeRecursive">
+              <e p="bin" t="ExcludeRecursive" />
+              <e p="Dharma.ItemsBlock.Models.Tests.csproj" t="IncludeRecursive" />
+              <e p="ItemModelTests.cs" t="Include" />
+              <e p="obj" t="ExcludeRecursive">
+                <e p="Debug" t="Include">
+                  <e p="netcoreapp2.1" t="Include">
+                    <e p="Dharma.ItemsBlock.Models.Tests.AssemblyInfo.cs" t="Include" />
+                    <e p="Dharma.ItemsBlock.Models.Tests.Program.cs" t="Include" />
+                  </e>
+                </e>
+              </e>
+            </e>
+          </e>
+          <e p="Public" t="IncludeRecursive">
+            <e p="appsettings.Development.json" t="Include" />
+            <e p="appsettings.json" t="Include" />
+            <e p="bin" t="ExcludeRecursive" />
+            <e p="Controllers" t="Include">
+              <e p="ItemsController.cs" t="Include" />
+            </e>
+            <e p="Dharma.ItemsBlock.csproj" t="IncludeRecursive" />
+            <e p="obj" t="ExcludeRecursive">
+              <e p="Debug" t="Include">
+                <e p="netcoreapp2.1" t="Include">
+                  <e p="Dharma.ItemsBlock.AssemblyInfo.cs" t="Include" />
+                </e>
+              </e>
+            </e>
+            <e p="Program.cs" t="Include" />
+            <e p="Properties" t="Include">
+              <e p="launchSettings.json" t="Include" />
+            </e>
+            <e p="Startup.cs" t="Include" />
+            <e p="ViewModels" t="Include">
+              <e p="ItemsBlockModelExtension.cs" t="Include" />
+              <e p="ItemsBlockViewModel.cs" t="Include" />
+            </e>
+            <e p="wwwroot" t="Include" />
+          </e>
+          <e p="Tests" t="Include" />
+        </e>
+        <e p="OrganizationBlock" t="Include">
+          <e p="Components" t="Include">
+            <e p="Commands" t="IncludeRecursive">
+              <e p="bin" t="ExcludeRecursive" />
+              <e p="Dharma.OrganizationBlock.Components.Commands.csproj" t="IncludeRecursive" />
+              <e p="obj" t="ExcludeRecursive">
+                <e p="Debug" t="Include">
+                  <e p="netcoreapp2.1" t="Include">
+                    <e p="Dharma.OrganizationBlock.Components.Commands.AssemblyInfo.cs" t="Include" />
+                  </e>
+                </e>
+              </e>
+            </e>
+            <e p="Queries" t="IncludeRecursive">
+              <e p="bin" t="ExcludeRecursive" />
+              <e p="Dharma.OrganizationBlock.Components.Queries.csproj" t="IncludeRecursive" />
+              <e p="obj" t="ExcludeRecursive">
+                <e p="Debug" t="Include">
+                  <e p="netcoreapp2.1" t="Include">
+                    <e p="Dharma.OrganizationBlock.Components.Queries.AssemblyInfo.cs" t="Include" />
+                  </e>
+                </e>
+              </e>
+            </e>
+            <e p="Tests" t="IncludeRecursive">
+              <e p="bin" t="ExcludeRecursive" />
+              <e p="Class1.cs" t="Include" />
+              <e p="Dharma.OrganizationBlock.Tests.csproj" t="IncludeRecursive" />
+              <e p="obj" t="ExcludeRecursive">
+                <e p="Debug" t="Include">
+                  <e p="netcoreapp2.1" t="Include">
+                    <e p="Dharma.OrganizationBlock.Tests.AssemblyInfo.cs" t="Include" />
+                    <e p="Dharma.OrganizationBlock.Tests.Program.cs" t="Include" />
+                  </e>
+                </e>
+              </e>
+            </e>
+          </e>
+          <e p="Implementation" t="Include" />
+          <e p="Interfaces" t="Include" />
+          <e p="Models" t="IncludeRecursive">
+            <e p="bin" t="ExcludeRecursive" />
+            <e p="Dharma.OrganizationBlock.Models.csproj" t="IncludeRecursive" />
+            <e p="obj" t="ExcludeRecursive">
+              <e p="Debug" t="Include">
+                <e p="netcoreapp2.1" t="Include">
+                  <e p="Dharma.OrganizationBlock.Models.AssemblyInfo.cs" t="Include" />
+                </e>
+              </e>
+            </e>
+            <e p="OrganizationModel.cs" t="Include" />
+          </e>
+          <e p="Public" t="Include" />
+          <e p="Tests" t="Include" />
+        </e>
+      </e>
+      <e p="Dharma.sln" t="IncludeFlat" />
+      <e p="packages" t="ExcludeRecursive" />
+    </e>
+    <e p="$USER_HOME$/Library/Caches/Rider2018.2/extResources" t="IncludeRecursive" />
+    <e p="$USER_HOME$/Library/Caches/Rider2018.2/resharper-host/local/Transient/ReSharperHost/v182/SolutionCaches/_Dharma.1612554108.00" t="ExcludeRecursive" />
+    <e p="$APPLICATION_CONFIG_DIR$/extensions" t="IncludeRecursive" />
+  </component>
+</project>

@@ -13,7 +13,7 @@ namespace Dharma.ItemsBlock.Models.Validations
 	{
 		public override void Validate(ItemModel model)
 		{
-			if (string.IsNullOrEmpty(model.Name))
+			if (model.Name == null || string.IsNullOrEmpty(model.Name.Trim()))
 				model.ValidationResult.Add("Invalid Name");
 		}
 	}

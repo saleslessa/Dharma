@@ -1,0 +1,906 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="0612e00d-fa03-4655-a1af-7ff76544d6ab" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.Dharma/.idea/contentModel.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.Dharma/.idea/indexLayout.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.Dharma/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.Dharma/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.Dharma/riderModule.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Blocks/Infra/Core/Gateway/HttpVerbsEnum.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Blocks/ItemsBlock/Implementation/ItemsBlockCommands.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Blocks/ItemsBlock/Implementation/ItemsBlockQueries.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Blocks/ItemsBlock/Implementation/Properties/AssemblyInfo.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Blocks/ItemsBlock/Implementation/Properties/Resources.resx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Blocks/ItemsBlock/Interfaces/IItemsBlockCommands.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Blocks/ItemsBlock/Interfaces/Properties/AssemblyInfo.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Blocks/ItemsBlock/Public/Controllers/ItemsController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Blocks/ItemsBlock/Public/ViewModels/ItemsBlockModelExtension.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Blocks/ItemsBlock/Public/ViewModels/ItemsBlockViewModel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Blocks/Infra/Core/Dharma.Core.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Blocks/Infra/Core/Dharma.Core.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Blocks/Infra/Core/Gateway/Gateway.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Blocks/Infra/Core/Gateway/Gateway.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Blocks/Infra/Core/Gateway/GatewayModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Blocks/Infra/Core/Gateway/GatewayModel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Blocks/Infra/LoggingBlock/Components/Commands/Dharma.LoggingBlock.Components.Commands.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Blocks/Infra/LoggingBlock/Components/Commands/Dharma.LoggingBlock.Components.Commands.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Blocks/Infra/LoggingBlock/Components/Commands/LoggingBlockBaseCommand.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Blocks/Infra/LoggingBlock/Components/Commands/LoggingBlockBaseCommand.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Blocks/Infra/LoggingBlock/Components/Commands/Properties/LoggingBlockCommand.Designer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Blocks/Infra/LoggingBlock/Components/Commands/Properties/LoggingBlockCommandResources.Designer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Blocks/Infra/LoggingBlock/Components/Commands/Properties/LoggingBlockCommand.resx" beforeDir="false" afterPath="$PROJECT_DIR$/Blocks/Infra/LoggingBlock/Components/Commands/Properties/LoggingBlockCommandResources.resx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Blocks/Infra/LoggingBlock/Components/Tests/Dharma.LoggingBlock.Component.Tests.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Blocks/Infra/LoggingBlock/Components/Tests/Dharma.LoggingBlock.Component.Tests.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Blocks/Infra/LoggingBlock/Public/Controllers/LoggingController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Blocks/Infra/LoggingBlock/Public/Controllers/LoggingController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Blocks/Infra/LoggingBlock/Public/Dharma.LoggingBlock.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Blocks/Infra/LoggingBlock/Public/Dharma.LoggingBlock.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Blocks/Infra/LoggingBlock/Public/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Blocks/Infra/LoggingBlock/Public/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Blocks/Infra/LoggingBlock/Public/Properties/launchSettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/Blocks/Infra/LoggingBlock/Public/Properties/launchSettings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Blocks/Infra/LoggingBlock/Public/Startup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Blocks/Infra/LoggingBlock/Public/Startup.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Blocks/ItemsBlock/Components/Commands/Properties/AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Blocks/ItemsBlock/Components/Commands/Properties/AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Blocks/ItemsBlock/Components/Queries/Properties/AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Blocks/ItemsBlock/Components/Queries/Properties/AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Blocks/ItemsBlock/Components/Tests/Dharma.ItemsBlock.Components.Tests.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Blocks/ItemsBlock/Components/Tests/Dharma.ItemsBlock.Components.Tests.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Blocks/ItemsBlock/Models/Models/ItemModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Blocks/ItemsBlock/Models/Models/ItemModel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Blocks/ItemsBlock/Models/Models/ItemType.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Blocks/ItemsBlock/Models/Models/ItemType.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Blocks/ItemsBlock/Models/Models/Properties/AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Blocks/ItemsBlock/Models/Models/Properties/AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Blocks/ItemsBlock/Models/Models/Validations/ItemHasValidNameValidation.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Blocks/ItemsBlock/Models/Models/Validations/ItemHasValidNameValidation.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Blocks/ItemsBlock/Models/Tests/Dharma.ItemsBlock.Models.Tests.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Blocks/ItemsBlock/Models/Tests/Dharma.ItemsBlock.Models.Tests.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Blocks/ItemsBlock/Models/Tests/ItemModelTests.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Blocks/ItemsBlock/Models/Tests/ItemModelTests.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Blocks/OrganizationBlock/Components/Tests/Dharma.OrganizationBlock.Tests.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Blocks/OrganizationBlock/Components/Tests/Dharma.OrganizationBlock.Tests.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dharma.sln" beforeDir="false" afterPath="$PROJECT_DIR$/Dharma.sln" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="1129233214">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="1" />
+          <entry key="project.open.time.4" value="1" />
+          <entry key="project.open.time.8" value="1" />
+          <entry key="project.opened" value="2" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="config" value="3" />
+          <entry key="cs" value="27" />
+          <entry key="csproj" value="4" />
+          <entry key="json" value="5" />
+          <entry key="resx" value="2" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="C#" value="27" />
+          <entry key="Config" value="3" />
+          <entry key="Csproj" value="4" />
+          <entry key="JSON" value="5" />
+          <entry key="Resources" value="2" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="config" value="15" />
+          <entry key="cs" value="704" />
+          <entry key="resx" value="93" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="C#" value="704" />
+          <entry key="Config" value="15" />
+          <entry key="Resources" value="93" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.vcs.git.usages" />
+      <usages-collector id="statistics.js.language.service.starts" />
+    </session>
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Blocks/ItemsBlock/Implementation/ItemsBlockQueries.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="777">
+              <caret line="80" column="55" selection-start-line="80" selection-start-column="55" selection-end-line="80" selection-end-column="55" />
+              <folding>
+                <marker date="1536945511425" expanded="true" signature="0:119" ph="/* ItemsBlockQueries.cs ... */" />
+                <marker date="1536945511425" expanded="true" signature="127:362" ph="..." />
+                <marker date="1536945511425" expanded="true" signature="406:1974" ph="{...}" />
+                <marker date="1536945511425" expanded="true" signature="463:1972" ph="{...}" />
+                <marker date="1536945511425" expanded="true" signature="531:585" ph="{...}" />
+                <marker date="1536945511425" expanded="true" signature="635:979" ph="{...}" />
+                <marker date="1536945511425" expanded="true" signature="646:698" ph="{...}" />
+                <marker date="1536945511425" expanded="true" signature="721:975" ph="{...}" />
+                <marker date="1536945511425" expanded="true" signature="1055:1552" ph="{...}" />
+                <marker date="1536945511425" expanded="true" signature="1066:1271" ph="{...}" />
+                <marker date="1536945511425" expanded="true" signature="1153:1235" ph="{...}" />
+                <marker date="1536945511425" expanded="true" signature="1294:1548" ph="{...}" />
+                <marker date="1536945511425" expanded="true" signature="1616:1969" ph="{...}" />
+                <marker date="1536945511425" expanded="true" signature="1627:1688" ph="{...}" />
+                <marker date="1536945511425" expanded="true" signature="1711:1965" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Blocks/ItemsBlock/Implementation/ItemsBlockCommands.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="145">
+              <caret line="72" selection-start-line="72" selection-end-line="72" />
+              <folding>
+                <marker date="1536946458821" expanded="true" signature="0:120" ph="/* ItemsBlockCommands.cs ... */" />
+                <marker date="1536946458821" expanded="false" signature="128:402" ph="..." />
+                <marker date="1536946458821" expanded="true" signature="446:2658" ph="{...}" />
+                <marker date="1536946458821" expanded="true" signature="508:2656" ph="{...}" />
+                <marker date="1536946458821" expanded="true" signature="589:664" ph="{...}" />
+                <marker date="1536946458821" expanded="true" signature="711:1398" ph="{...}" />
+                <marker date="1536946458821" expanded="true" signature="737:1049" ph="{...}" />
+                <marker date="1536946458821" expanded="true" signature="789:869" ph="{...}" />
+                <marker date="1536946458821" expanded="true" signature="890:1004" ph="{...}" />
+                <marker date="1536946458821" expanded="true" signature="1081:1388" ph="{...}" />
+                <marker date="1536946458821" expanded="true" signature="1448:1702" ph="{...}" />
+                <marker date="1536946458821" expanded="true" signature="1492:1563" ph="{...}" />
+                <marker date="1536946458821" expanded="true" signature="1580:1665" ph="{...}" />
+                <marker date="1536946458821" expanded="true" signature="1775:2650" ph="{...}" />
+                <marker date="1536946458821" expanded="true" signature="2330:2427" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Blocks/Infra/Core/BaseModel.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="207">
+              <caret line="49" column="12" selection-start-line="49" selection-start-column="12" selection-end-line="49" selection-end-column="12" />
+              <folding>
+                <marker date="1535653832407" expanded="true" signature="0:104" ph="/* Model.cs ... */" />
+                <marker date="1535653832407" expanded="false" signature="111:201" ph="..." />
+                <marker date="1535653832407" expanded="true" signature="224:1284" ph="{...}" />
+                <marker date="1535653832407" expanded="true" signature="228:303" ph="/// Base class for all models of the project ... " />
+                <marker date="1535653832407" expanded="true" signature="336:1282" ph="{...}" />
+                <marker date="1535653832407" expanded="true" signature="345:460" ph="/// Autogenerated Id of loggign message ... " />
+                <marker date="1535653832407" expanded="true" signature="511:582" ph="/// Validation property of a model ... " />
+                <marker date="1535653832407" expanded="true" signature="656:776" ph="/// Initializes a new instance of the &lt;see cref=&quot;T:Dharma.AbstractBlock.Model&quot;/&gt; class. ... " />
+                <marker date="1535653832407" expanded="true" signature="797:851" ph="{...}" />
+                <marker date="1535653832407" expanded="true" signature="855:915" ph="/// Validate this instance. ... " />
+                <marker date="1535653832407" expanded="true" signature="959:1098" ph="/// Ises the valid. ... " />
+                <marker date="1535653832407" expanded="true" signature="1122:1193" ph="{...}" />
+                <marker date="1535653832407" expanded="true" signature="1232:1278" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Blocks/ItemsBlock/Models/Models/ItemModel.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="266">
+              <caret line="46" column="29" selection-start-line="46" selection-start-column="29" selection-end-line="46" selection-end-column="29" />
+              <folding>
+                <marker date="1536774650969" expanded="true" signature="0:112" ph="/* ItemsBlock.cs ... */" />
+                <marker date="1536774650969" expanded="false" signature="119:254" ph="..." />
+                <marker date="1536774650969" expanded="true" signature="290:1117" ph="{...}" />
+                <marker date="1536774650969" expanded="true" signature="330:1115" ph="{...}" />
+                <marker date="1536774650969" expanded="true" signature="570:632" ph="{...}" />
+                <marker date="1536774650969" expanded="true" signature="759:889" ph="{...}" />
+                <marker date="1536774650969" expanded="true" signature="927:1112" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Blocks/Infra/LoggingBlock/Public/Dharma.LoggingBlock.csproj">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Blocks/ItemsBlock/Public/Controllers/ItemsController.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="193">
+              <caret line="59" column="16" selection-start-line="59" selection-start-column="16" selection-end-line="59" selection-end-column="16" />
+              <folding>
+                <marker date="1536945254960" expanded="true" signature="0:117" ph="/* ItemsController.cs ... */" />
+                <marker date="1536945254960" expanded="false" signature="125:310" ph="..." />
+                <marker date="1536945254960" expanded="true" signature="351:1794" ph="{...}" />
+                <marker date="1536945254960" expanded="true" signature="455:1792" ph="{...}" />
+                <marker date="1536945254960" expanded="true" signature="549:786" ph="{...}" />
+                <marker date="1536945254960" expanded="true" signature="861:930" ph="{...}" />
+                <marker date="1536945254960" expanded="true" signature="988:1288" ph="{...}" />
+                <marker date="1536945254960" expanded="true" signature="1073:1278" ph="{...}" />
+                <marker date="1536945254960" expanded="true" signature="1380:1786" ph="{...}" />
+                <marker date="1536945254960" expanded="true" signature="1465:1776" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/22D05BE6-B7A7-4626-A942-50ACDB0E33A6/6c/9d2c95a9/ConstructorParameterBinding.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="109">
+              <caret line="101" column="8" selection-start-line="101" selection-start-column="8" selection-end-line="101" selection-end-column="8" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/22D05BE6-B7A7-4626-A942-50ACDB0E33A6/15/08953806/ReflectionActivator.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="141">
+              <caret line="99" column="6" selection-start-line="99" selection-start-column="6" selection-end-line="99" selection-end-column="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/22D05BE6-B7A7-4626-A942-50ACDB0E33A6/75/ed70d4b4/InstanceLookup.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="109">
+              <caret line="103" column="8" selection-start-line="103" selection-start-column="8" selection-end-line="103" selection-end-column="8" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Blocks/ItemsBlock/Implementation/Properties/Resources.resx" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/22D05BE6-B7A7-4626-A942-50ACDB0E33A6/75/ed70d4b4/InstanceLookup.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Blocks/ItemsBlock/Implementation/ItemsBlockCommands.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Blocks/ItemsBlock/Implementation/Properties/Resources.Designer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Blocks/Infra/Core/Gateway/GatewayResources.resx" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Blocks/Infra/Core/BaseModel.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Blocks/ItemsBlock/Public/Controllers/ItemsController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Blocks/ItemsBlock/Models/Tests/ItemModelTests.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$USER_HOME$/.local/share/Symbols/src/nunit/nunit/502a844c0b104731c7f5d57ef6d0df436d4b75af/src/NUnitFramework/framework/Internal/Reflect.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Blocks/ItemsBlock/Models/Models/Validations/ItemHasValidNameValidation.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/22D05BE6-B7A7-4626-A942-50ACDB0E33A6/6c/9d2c95a9/ConstructorParameterBinding.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Blocks/Infra/LoggingBlock/Public/Startup.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Blocks/ItemsBlock/Public/Startup.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/6AC88FF9-9817-4BE7-8F0D-6AB05B5F222B/67/18b19d99/WebHostBuilderExtensions.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/CB5BE0C7-4433-425A-AE2A-B70ED6C7054C/7e/ad22808d/Thread.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Blocks/Infra/LoggingBlock/Public/Program.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Blocks/ItemsBlock/Models/Models/ItemModel.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/22D05BE6-B7A7-4626-A942-50ACDB0E33A6/15/08953806/ReflectionActivator.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Blocks/ItemsBlock/Implementation/ItemsBlockQueries.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$USER_HOME$/.nuget/packages/nlog.config/4.5.9/contentFiles/any/any/NLog.config" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Blocks/ItemsBlock/Implementation/NLog.config" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Blocks/Infra/Core/Gateway/HttpVerbsEnum.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/Blocks/Infra/LoggingBlock/Public/Startup.cs" />
+        <option value="$PROJECT_DIR$/Blocks/Infra/LoggingBlock/Public/Program.cs" />
+        <option value="$PROJECT_DIR$/Blocks/ItemsBlock/Models/Tests/ItemModelTests.cs" />
+        <option value="$USER_HOME$/.nuget/packages/nlog.config/4.5.9/contentFiles/any/any/NLog.config" />
+        <option value="$PROJECT_DIR$/Blocks/ItemsBlock/Implementation/Properties/Resources.Designer.cs" />
+        <option value="$PROJECT_DIR$/Blocks/ItemsBlock/Implementation/Properties/Resources.resx" />
+        <option value="$PROJECT_DIR$/Blocks/ItemsBlock/Public/Controllers/ItemsController.cs" />
+        <option value="$PROJECT_DIR$/Blocks/ItemsBlock/Implementation/ItemsBlockQueries.cs" />
+        <option value="$PROJECT_DIR$/Blocks/ItemsBlock/Models/Models/Validations/ItemHasValidNameValidation.cs" />
+        <option value="$PROJECT_DIR$/Blocks/ItemsBlock/Implementation/ItemsBlockCommands.cs" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="y" value="22" />
+    <option name="width" value="1280" />
+    <option name="height" value="726" />
+  </component>
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="SolutionExplorer" proportions="" version="1">
+      <autoscrollToSource SolutionExplorer="true" />
+      <autoscrollFromSource SolutionExplorer="true" />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="SolutionExplorer">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="Dharma" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+            <path>
+              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="Dharma" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Blocks" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+            <path>
+              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="Dharma" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Blocks" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Infra" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+            <path>
+              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="Dharma" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Blocks" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Infra" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Core" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+            <path>
+              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="Dharma" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Blocks" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Infra" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="LoggingBlock" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+            <path>
+              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="Dharma" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Blocks" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Infra" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="LoggingBlock" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Public" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+            <path>
+              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="Dharma" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Blocks" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="ItemsBlock" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+            <path>
+              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="Dharma" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Blocks" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="ItemsBlock" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Implementation" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+            <path>
+              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="Dharma" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Blocks" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="ItemsBlock" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Implementation" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Dharma.ItemsBlock.Implementation" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+            <path>
+              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="Dharma" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Blocks" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="ItemsBlock" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Models" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+            <path>
+              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="Dharma" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Blocks" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="ItemsBlock" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Models" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Dharma.ItemsBlock.Models" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+            <path>
+              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="Dharma" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Blocks" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="ItemsBlock" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Models" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Dharma.ItemsBlock.Models" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Validations" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+            <path>
+              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="Dharma" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Blocks" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="ItemsBlock" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Public" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+            <path>
+              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="Dharma" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Blocks" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="ItemsBlock" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Public" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Dharma.ItemsBlock" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+            <path>
+              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="Dharma" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Blocks" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="ItemsBlock" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Public" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Dharma.ItemsBlock" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Controllers" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+        <option name="show-all-files" value="false" />
+      </pane>
+      <pane id="FileSystemExplorer" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="Rider.DefaultBreakpoints.AreToggled" value="true" />
+    <property name="Rider.ProjectViewActivator.IsNotFirstRun" value="true" />
+    <property name="SearchEverywhereHistoryKey" value="itemtype&#9;null&#9;null" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected=".NET Project.Blocks\ItemsBlock\Public\Dharma.ItemsBlock">
+    <configuration name="Blocks\Infra\LoggingBlock\Public\Dharma.LoggingBlock" type="DotNetProject" factoryName=".NET Project" temporary="true">
+      <option name="EXE_PATH" value="$PROJECT_DIR$/Blocks/Infra/LoggingBlock/Public/bin/Debug/netcoreapp2.1/Dharma.LoggingBlock.dll" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Blocks/Infra/LoggingBlock/Public" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="PROJECT_PATH" value="$PROJECT_DIR$/Blocks/Infra/LoggingBlock/Public/Dharma.LoggingBlock.csproj" />
+      <option name="PROJECT_EXE_PATH_TRACKING" value="1" />
+      <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
+      <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
+      <option name="PROJECT_KIND" value="DotNetCore" />
+      <option name="PROJECT_TFM" value=".NETCoreApp,Version=v2.1" />
+      <method v="2">
+        <option name="Build" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Blocks\ItemsBlock\Public\Dharma.ItemsBlock" type="DotNetProject" factoryName=".NET Project" temporary="true">
+      <option name="EXE_PATH" value="$PROJECT_DIR$/Blocks/ItemsBlock/Public/bin/Debug/netcoreapp2.1/Dharma.ItemsBlock.dll" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Blocks/ItemsBlock/Public" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="PROJECT_PATH" value="$PROJECT_DIR$/Blocks/ItemsBlock/Public/Dharma.ItemsBlock.csproj" />
+      <option name="PROJECT_EXE_PATH_TRACKING" value="1" />
+      <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
+      <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
+      <option name="PROJECT_KIND" value="DotNetCore" />
+      <option name="PROJECT_TFM" value=".NETCoreApp,Version=v2.1" />
+      <method v="2">
+        <option name="Build" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Default" type="DotNetProject" factoryName=".NET Project">
+      <option name="EXE_PATH" value="$PROJECT_DIR$/Blocks/Infra/LoggingBlock/Public/bin/Debug/netcoreapp2.1/Dharma.LoggingBlock.dll" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Blocks/Infra/LoggingBlock/Public" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <envs>
+        <env name="ASPNETCORE_ENVIRONMENT" value="Development" />
+        <env name="ASPNETCORE_URLS" value="https://localhost:8081;http://localhost:8080" />
+      </envs>
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="PROJECT_PATH" value="$PROJECT_DIR$/Blocks/Infra/LoggingBlock/Public/Dharma.LoggingBlock.csproj" />
+      <option name="PROJECT_EXE_PATH_TRACKING" value="1" />
+      <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
+      <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
+      <option name="PROJECT_KIND" value="DotNetCore" />
+      <option name="PROJECT_TFM" value=".NETCoreApp,Version=v2.1" />
+      <browser start="true" url="https://localhost:8081" />
+      <method v="2">
+        <option name="Build" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue=".NET Project.Default" />
+      <item itemvalue=".NET Project.Blocks\ItemsBlock\Public\Dharma.ItemsBlock" />
+      <item itemvalue=".NET Project.Blocks\Infra\LoggingBlock\Public\Dharma.LoggingBlock" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue=".NET Project.Blocks\ItemsBlock\Public\Dharma.ItemsBlock" />
+        <item itemvalue=".NET Project.Blocks\Infra\LoggingBlock\Public\Dharma.LoggingBlock" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0612e00d-fa03-4655-a1af-7ff76544d6ab" name="Default Changelist" comment="" />
+      <created>1536856885748</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1536856885748</updated>
+      <workItem from="1536856889171" duration="615000" />
+      <workItem from="1536941052646" duration="4945000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="5560000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="22" width="1280" height="726" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2536349" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.329653" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39905363" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="NuGet" order="7" weight="0.329653" />
+      <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Unit Tests" order="11" weight="0.329653" />
+      <window_info anchor="bottom" id="REST Client" order="12" />
+      <window_info anchor="bottom" id="Terminal" order="13" />
+      <window_info anchor="bottom" id="Event Log" order="14" side_tool="true" />
+      <window_info anchor="bottom" id="Build" order="15" weight="0.24921136" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Errors In Solution" order="3" />
+      <window_info anchor="right" id="Database" order="4" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
+  <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" suspend="NONE" type="DotNet Exception Breakpoints">
+          <properties exception="System.Threading.ThreadAbortException" displayValue="System.Threading.ThreadAbortException" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/Blocks/Infra/LoggingBlock/Public/appsettings.Development.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Blocks/Infra/LoggingBlock/Public/appsettings.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="128">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Blocks/Infra/LoggingBlock/Public/Properties/launchSettings.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Blocks/Infra/LoggingBlock/Public/Startup.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="10" column="37" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/6AC88FF9-9817-4BE7-8F0D-6AB05B5F222B/67/18b19d99/WebHostBuilderExtensions.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="261">
+          <caret line="65" column="67" lean-forward="true" selection-start-line="65" selection-start-column="67" selection-end-line="65" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Blocks/ItemsBlock/Models/Tests/ItemModelTests.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+          <folding>
+            <marker date="1536943239982" expanded="true" signature="0:116" ph="/* ItemModelTests.cs ... */" />
+            <marker date="1536943239982" expanded="true" signature="124:159" ph="..." />
+            <marker date="1536943239982" expanded="true" signature="201:3052" ph="{...}" />
+            <marker date="1536943239982" expanded="true" signature="247:3050" ph="{...}" />
+            <marker date="1536943239982" expanded="true" signature="370:609" ph="{...}" />
+            <marker date="1536943239982" expanded="true" signature="724:962" ph="{...}" />
+            <marker date="1536943239982" expanded="true" signature="1103:1385" ph="{...}" />
+            <marker date="1536943239982" expanded="true" signature="1572:1769" ph="{...}" />
+            <marker date="1536943239982" expanded="true" signature="1865:2142" ph="{...}" />
+            <marker date="1536943239982" expanded="true" signature="2240:3047" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Blocks/Infra/LoggingBlock/Public/Program.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+          <folding>
+            <marker date="1536857503989" expanded="false" signature="6:63" ph="..." />
+            <marker date="1536857503989" expanded="true" signature="94:369" ph="{...}" />
+            <marker date="1536857503989" expanded="true" signature="125:367" ph="{...}" />
+            <marker date="1536857503989" expanded="true" signature="169:222" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.local/share/Symbols/src/nunit/nunit/502a844c0b104731c7f5d57ef6d0df436d4b75af/src/NUnitFramework/framework/Internal/Reflect.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="210" column="20" selection-start-line="210" selection-start-column="20" selection-end-line="210" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Blocks/ItemsBlock/Implementation/NLog.config">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$USER_HOME$/.nuget/packages/nlog.config/4.5.9/contentFiles/any/any/NLog.config">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="10" selection-start-line="9" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Blocks/ItemsBlock/Implementation/Properties/Resources.Designer.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="784">
+          <caret line="55" selection-start-line="55" selection-end-line="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Blocks/Infra/Core/Gateway/GatewayResources.resx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="218">
+          <caret line="16" column="9" lean-forward="true" selection-start-line="14" selection-start-column="1" selection-end-line="16" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Blocks/Infra/Core/Gateway/HttpVerbsEnum.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <marker date="1536773566793" expanded="true" signature="0:115" ph="/* HttpVerbsEnum.cs ... */" />
+            <marker date="1536773566793" expanded="false" signature="122:158" ph="..." />
+            <marker date="1536773566793" expanded="true" signature="189:648" ph="{...}" />
+            <marker date="1536773566793" expanded="true" signature="194:247" ph="/// Http verbs enum. ... " />
+            <marker date="1536773566793" expanded="true" signature="275:646" ph="{...}" />
+            <marker date="1536773566793" expanded="true" signature="284:333" ph="/// The get. ... " />
+            <marker date="1536773566793" expanded="true" signature="372:422" ph="/// The post. ... " />
+            <marker date="1536773566793" expanded="true" signature="463:512" ph="/// The put. ... " />
+            <marker date="1536773566793" expanded="true" signature="551:603" ph="/// The delete. ... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Blocks/ItemsBlock/Implementation/Properties/Resources.resx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="314">
+          <caret line="21" column="77" selection-start-line="21" selection-start-column="73" selection-end-line="21" selection-end-column="77" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Blocks/ItemsBlock/Public/Startup.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="22" column="52" selection-start-line="22" selection-start-column="51" selection-end-line="22" selection-end-column="52" />
+          <folding>
+            <marker date="1536747169671" expanded="false" signature="6:402" ph="..." />
+            <marker date="1536747169671" expanded="true" signature="431:1189" ph="{...}" />
+            <marker date="1536747169671" expanded="true" signature="455:1187" ph="{...}" />
+            <marker date="1536747169671" expanded="true" signature="505:547" ph="{...}" />
+            <marker date="1536747169671" expanded="true" signature="752:840" ph="{...}" />
+            <marker date="1536747169671" expanded="true" signature="1016:1184" ph="{...}" />
+            <marker date="1536747169671" expanded="true" signature="1048:1095" ph="{...}" />
+            <marker date="1536747169671" expanded="true" signature="1103:1132" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Blocks/ItemsBlock/Public/appsettings.Development.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Blocks/ItemsBlock/Public/Dharma.ItemsBlock.csproj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="11" column="13" lean-forward="true" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Blocks/ItemsBlock/Implementation/ItemsBlockQueries.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="777">
+          <caret line="80" column="55" selection-start-line="80" selection-start-column="55" selection-end-line="80" selection-end-column="55" />
+          <folding>
+            <marker date="1536945511425" expanded="true" signature="0:119" ph="/* ItemsBlockQueries.cs ... */" />
+            <marker date="1536945511425" expanded="true" signature="127:362" ph="..." />
+            <marker date="1536945511425" expanded="true" signature="406:1974" ph="{...}" />
+            <marker date="1536945511425" expanded="true" signature="463:1972" ph="{...}" />
+            <marker date="1536945511425" expanded="true" signature="531:585" ph="{...}" />
+            <marker date="1536945511425" expanded="true" signature="635:979" ph="{...}" />
+            <marker date="1536945511425" expanded="true" signature="646:698" ph="{...}" />
+            <marker date="1536945511425" expanded="true" signature="721:975" ph="{...}" />
+            <marker date="1536945511425" expanded="true" signature="1055:1552" ph="{...}" />
+            <marker date="1536945511425" expanded="true" signature="1066:1271" ph="{...}" />
+            <marker date="1536945511425" expanded="true" signature="1153:1235" ph="{...}" />
+            <marker date="1536945511425" expanded="true" signature="1294:1548" ph="{...}" />
+            <marker date="1536945511425" expanded="true" signature="1616:1969" ph="{...}" />
+            <marker date="1536945511425" expanded="true" signature="1627:1688" ph="{...}" />
+            <marker date="1536945511425" expanded="true" signature="1711:1965" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/CB5BE0C7-4433-425A-AE2A-B70ED6C7054C/7e/ad22808d/Thread.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="109">
+          <caret line="111" column="8" selection-start-line="111" selection-start-column="8" selection-end-line="111" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Blocks/ItemsBlock/Public/Controllers/ItemsController.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="193">
+          <caret line="59" column="16" selection-start-line="59" selection-start-column="16" selection-end-line="59" selection-end-column="16" />
+          <folding>
+            <marker date="1536945254960" expanded="true" signature="0:117" ph="/* ItemsController.cs ... */" />
+            <marker date="1536945254960" expanded="false" signature="125:310" ph="..." />
+            <marker date="1536945254960" expanded="true" signature="351:1794" ph="{...}" />
+            <marker date="1536945254960" expanded="true" signature="455:1792" ph="{...}" />
+            <marker date="1536945254960" expanded="true" signature="549:786" ph="{...}" />
+            <marker date="1536945254960" expanded="true" signature="861:930" ph="{...}" />
+            <marker date="1536945254960" expanded="true" signature="988:1288" ph="{...}" />
+            <marker date="1536945254960" expanded="true" signature="1073:1278" ph="{...}" />
+            <marker date="1536945254960" expanded="true" signature="1380:1786" ph="{...}" />
+            <marker date="1536945254960" expanded="true" signature="1465:1776" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/22D05BE6-B7A7-4626-A942-50ACDB0E33A6/6c/9d2c95a9/ConstructorParameterBinding.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="109">
+          <caret line="101" column="8" selection-start-line="101" selection-start-column="8" selection-end-line="101" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/22D05BE6-B7A7-4626-A942-50ACDB0E33A6/15/08953806/ReflectionActivator.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="141">
+          <caret line="99" column="6" selection-start-line="99" selection-start-column="6" selection-end-line="99" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/22D05BE6-B7A7-4626-A942-50ACDB0E33A6/75/ed70d4b4/InstanceLookup.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="109">
+          <caret line="103" column="8" selection-start-line="103" selection-start-column="8" selection-end-line="103" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Blocks/Infra/Core/BaseModel.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="49" column="12" selection-start-line="49" selection-start-column="12" selection-end-line="49" selection-end-column="12" />
+          <folding>
+            <marker date="1535653832407" expanded="true" signature="0:104" ph="/* Model.cs ... */" />
+            <marker date="1535653832407" expanded="false" signature="111:201" ph="..." />
+            <marker date="1535653832407" expanded="true" signature="224:1284" ph="{...}" />
+            <marker date="1535653832407" expanded="true" signature="228:303" ph="/// Base class for all models of the project ... " />
+            <marker date="1535653832407" expanded="true" signature="336:1282" ph="{...}" />
+            <marker date="1535653832407" expanded="true" signature="345:460" ph="/// Autogenerated Id of loggign message ... " />
+            <marker date="1535653832407" expanded="true" signature="511:582" ph="/// Validation property of a model ... " />
+            <marker date="1535653832407" expanded="true" signature="656:776" ph="/// Initializes a new instance of the &lt;see cref=&quot;T:Dharma.AbstractBlock.Model&quot;/&gt; class. ... " />
+            <marker date="1535653832407" expanded="true" signature="797:851" ph="{...}" />
+            <marker date="1535653832407" expanded="true" signature="855:915" ph="/// Validate this instance. ... " />
+            <marker date="1535653832407" expanded="true" signature="959:1098" ph="/// Ises the valid. ... " />
+            <marker date="1535653832407" expanded="true" signature="1122:1193" ph="{...}" />
+            <marker date="1535653832407" expanded="true" signature="1232:1278" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Blocks/ItemsBlock/Models/Models/Validations/ItemHasValidNameValidation.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="15" column="37" selection-start-line="15" selection-start-column="37" selection-end-line="15" selection-end-column="37" />
+          <folding>
+            <marker date="1536946189593" expanded="true" signature="0:128" ph="/* ItemHasValidNameValidation.cs ... */" />
+            <marker date="1536946189593" expanded="true" signature="195:451" ph="{...}" />
+            <marker date="1536946189593" expanded="true" signature="268:449" ph="{...}" />
+            <marker date="1536946189593" expanded="true" signature="320:446" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Blocks/ItemsBlock/Models/Models/ItemModel.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="46" column="29" selection-start-line="46" selection-start-column="29" selection-end-line="46" selection-end-column="29" />
+          <folding>
+            <marker date="1536774650969" expanded="true" signature="0:112" ph="/* ItemsBlock.cs ... */" />
+            <marker date="1536774650969" expanded="false" signature="119:254" ph="..." />
+            <marker date="1536774650969" expanded="true" signature="290:1117" ph="{...}" />
+            <marker date="1536774650969" expanded="true" signature="330:1115" ph="{...}" />
+            <marker date="1536774650969" expanded="true" signature="570:632" ph="{...}" />
+            <marker date="1536774650969" expanded="true" signature="759:889" ph="{...}" />
+            <marker date="1536774650969" expanded="true" signature="927:1112" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Blocks/Infra/LoggingBlock/Public/Dharma.LoggingBlock.csproj">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Blocks/ItemsBlock/Implementation/ItemsBlockCommands.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="145">
+          <caret line="72" selection-start-line="72" selection-end-line="72" />
+          <folding>
+            <marker date="1536946458821" expanded="true" signature="0:120" ph="/* ItemsBlockCommands.cs ... */" />
+            <marker date="1536946458821" expanded="false" signature="128:402" ph="..." />
+            <marker date="1536946458821" expanded="true" signature="446:2658" ph="{...}" />
+            <marker date="1536946458821" expanded="true" signature="508:2656" ph="{...}" />
+            <marker date="1536946458821" expanded="true" signature="589:664" ph="{...}" />
+            <marker date="1536946458821" expanded="true" signature="711:1398" ph="{...}" />
+            <marker date="1536946458821" expanded="true" signature="737:1049" ph="{...}" />
+            <marker date="1536946458821" expanded="true" signature="789:869" ph="{...}" />
+            <marker date="1536946458821" expanded="true" signature="890:1004" ph="{...}" />
+            <marker date="1536946458821" expanded="true" signature="1081:1388" ph="{...}" />
+            <marker date="1536946458821" expanded="true" signature="1448:1702" ph="{...}" />
+            <marker date="1536946458821" expanded="true" signature="1492:1563" ph="{...}" />
+            <marker date="1536946458821" expanded="true" signature="1580:1665" ph="{...}" />
+            <marker date="1536946458821" expanded="true" signature="1775:2650" ph="{...}" />
+            <marker date="1536946458821" expanded="true" signature="2330:2427" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

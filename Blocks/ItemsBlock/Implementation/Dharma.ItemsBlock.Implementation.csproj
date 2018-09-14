@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Interfaces\Dharma.ItemsBlock.Interfaces.csproj" />
+    <ProjectReference Include="..\Models\Models\Dharma.ItemsBlock.Models.csproj" />
+    <ProjectReference Include="..\Components\Queries\Dharma.ItemsBlock.Components.Queries.csproj" />
+    <ProjectReference Include="..\Components\Commands\Dharma.ItemsBlock.Components.Commands.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="NLog" Version="4.5.9" />
+    <PackageReference Include="NLog.Config" Version="4.5.9" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="NLog.config" />
+  </ItemGroup>
+</Project>

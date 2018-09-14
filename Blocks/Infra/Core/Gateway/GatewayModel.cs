@@ -12,9 +12,6 @@ namespace Dharma.Core.Gateway
 {
   public class GatewayModel : BaseModel
   {
-    [Key]
-    public string Id { get; set; }
-
     public string Model { get; set; }
 
     [Required]

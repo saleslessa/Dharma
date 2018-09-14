@@ -115,7 +115,7 @@ namespace Dharma.LoggingBlock.Controllers
 				using (var lifeTime = _container.Build().BeginLifetimeScope())
 				{
 					var command = lifeTime.Resolve<ILoggingCommands>();
-					var typeEnum = (LoggingBlockType)Enum.Parse(typeof(LoggingBlockType), logging.Type);
+					var typeEnum = logging.Type != null ? (LoggingBlockType)Enum.Parse(typeof(LoggingBlockType), logging.Type) : LoggingBlockType.Error;
 
 					var model = command.AddLog(logging.BlockOrigin, logging.Message, typeEnum);
 					if (!model.IsValid())
@@ -127,7 +127,7 @@ namespace Dharma.LoggingBlock.Controllers
 			}
 			catch (Exception ex)
 			{
-				return Ok(ex.Message);
+				return BadRequest(ex.Message);
 			}
 		}
 	}

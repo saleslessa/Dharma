@@ -25,3 +25,6 @@ using System.Runtime.CompilerServices;
 
 //[assembly: AssemblyDelaySign(false)]
 //[assembly: AssemblyKeyFile("")]
+
+[assembly: InternalsVisibleTo("Dharma.ItemsBlock.Implementation")]
+[assembly: InternalsVisibleTo("Dharma.ItemsBlock.Components.Tests")]

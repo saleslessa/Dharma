@@ -8,6 +8,7 @@
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DocumentationMarkdown>'..\..\..\Readme.md</DocumentationMarkdown>
     <DocumentationFile>bin\Debug\netcoreapp2.1\LoggingBlock.xml</DocumentationFile>
+    <WarningLevel>2</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DocumentationMarkdown>'..\..\..\Readme.md</DocumentationMarkdown>

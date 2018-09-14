@@ -38,7 +38,7 @@ namespace Dharma.ItemsBlock.Models
 			Name = name;
 			Type = type;
 			Amount = amount;
-			Categories = categories;
+			Categories = categories ?? new List<string>();
 			Active = active;
 		}
 
