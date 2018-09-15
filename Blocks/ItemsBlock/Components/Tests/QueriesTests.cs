@@ -5,12 +5,14 @@
 //
 // Copyright (c) 2018 MIT
 //
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Linq.Expressions;
 using Dharma.ItemsBlock.Components.Queries;
 using Dharma.ItemsBlock.Models;
 using NUnit.Framework;
-
 
 namespace Dharma.ItemsBlock.Components.Tests
 {
@@ -31,10 +33,10 @@ namespace Dharma.ItemsBlock.Components.Tests
 											, new List<string>(){"Elderly", "Children"}, true),
 			};
 
-			var query = new ListAllItemsQuery();
+			var query = new TestListAllItemsQuery();
 
 			// Act
-			var result = query.Run();
+			var result = mockDataSet.Where(query.filter.Compile()).ToList();
 
 			// Assert
 
@@ -61,14 +63,34 @@ namespace Dharma.ItemsBlock.Components.Tests
 											, new List<string>(){"Elderly", "Children"}, true),
 			};
 
-			var query = new ListItemsFromCategoryQuery("Clothes");
+			var query = new TestListItemsFromCategoryQuery("Clothes");
 
 			// Act
-			var result = query.Run();
+			var result = mockDataSet.Where(query.filter.Compile()).ToList();
 
 			// Assert
 			Assert.AreEqual(1, result.Count());
 			Assert.AreEqual(result.Single(), mockDataSet.First());
+		}
+	}
+
+	internal class TestListItemsFromCategoryQuery : ListItemsFromCategoryQuery
+	{
+		public Expression<Func<ItemModel, bool>> filter { get; }
+		
+		public TestListItemsFromCategoryQuery(string category) : base(category)
+		{
+			filter = _filter;
+		}
+	}
+
+	internal class TestListAllItemsQuery : ListAllItemsQuery
+	{
+		public Expression<Func<ItemModel, bool>> filter { get; }
+
+		public TestListAllItemsQuery()
+		{
+			filter = _filter;
 		}
 	}
 }

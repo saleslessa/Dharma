@@ -4,6 +4,9 @@
 //       Sales Alencar <lopesdealencar@gmail.com>
 //
 // Copyright (c) 2018 MIT
+
+using System;
+using Dharma.Core;
 using Dharma.LoggingBlock.Components.Commands;
 using Dharma.LoggingBlock.Interfaces;
 using Dharma.LoggingBlock.Models;
@@ -14,14 +17,21 @@ namespace Dharma.LoggingBlock.Implementation
 
 	internal class LoggingCommandImplementation : ILoggingCommands
 	{
-		public LoggingBlockModel AddLog(string origin, string message, LoggingBlockType type)
+		public LoggingBlockModel AddLog(LoggingBlockModel model)
 		{
-			var model = new LoggingBlockModel(origin, message, type);
-			if (!model.IsValid()) return model;
+			try
+			{
+				if (!model.IsValid()) 
+					return model;
 
-			var command = new AddLoggingCommand(model);
-			command.Run();
-			return model;
+				var command = new AddLoggingCommand(model);
+				command.Run();
+				return model;
+			}
+			catch (Exception e)
+			{
+				return ErrorHandler.LogError<LoggingBlockModel>(e);
+			}
 		}
 	}
 }

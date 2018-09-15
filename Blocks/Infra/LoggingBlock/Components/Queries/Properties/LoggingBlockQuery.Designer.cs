@@ -10,13 +10,12 @@
 
 namespace Dharma.LoggingBlock.Components.Queries.Properties {
     using System;
-    using System.Reflection;
     
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "4.0.0.0")]
     [System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    internal class LoggingBlockQuery {
+    public class LoggingBlockQuery {
         
         private static System.Resources.ResourceManager resourceMan;
         
@@ -27,10 +26,10 @@ namespace Dharma.LoggingBlock.Components.Queries.Properties {
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static System.Resources.ResourceManager ResourceManager {
+        public static System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.Equals(null, resourceMan)) {
-                    System.Resources.ResourceManager temp = new System.Resources.ResourceManager("Dharma.LoggingBlock.Components.Queries.Properties", typeof(LoggingBlockQuery).Assembly);
+                    System.Resources.ResourceManager temp = new System.Resources.ResourceManager("Dharma.LoggingBlock.Components.Queries.Properties.LoggingBlockQuery", typeof(LoggingBlockQuery).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -38,42 +37,12 @@ namespace Dharma.LoggingBlock.Components.Queries.Properties {
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static System.Globalization.CultureInfo Culture {
+        public static System.Globalization.CultureInfo Culture {
             get {
                 return resourceCulture;
             }
             set {
                 resourceCulture = value;
-            }
-        }
-        
-        internal static string Server {
-            get {
-                return ResourceManager.GetString("Server", resourceCulture);
-            }
-        }
-        
-        internal static string Port {
-            get {
-                return ResourceManager.GetString("Port", resourceCulture);
-            }
-        }
-        
-        internal static string Database {
-            get {
-                return ResourceManager.GetString("Database", resourceCulture);
-            }
-        }
-        
-        internal static string User {
-            get {
-                return ResourceManager.GetString("User", resourceCulture);
-            }
-        }
-        
-        internal static string Pwd {
-            get {
-                return ResourceManager.GetString("Pwd", resourceCulture);
             }
         }
     }

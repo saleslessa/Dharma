@@ -4,21 +4,26 @@
 //       Sales Alencar <lopesdealencar@gmail.com>
 //
 // Copyright (c) 2018 MIT
+
 using System;
 using Dharma.LoggingBlock.Models;
 
-namespace LoggingBlock.ViewModels
+namespace Dharma.LoggingBlock.ViewModels
 {
 	internal static class LoggingBlockModelExtension
 	{
 		internal static LoggingBlockViewModel Map(this LoggingBlockModel model)
 		{
-			return new LoggingBlockViewModel() { 
+			var result = new LoggingBlockViewModel() { 
 				BlockOrigin = model.BlockOrigin,
 				Id = model.Id,
 				Message = model.Message,
 				Type = Enum.GetName(typeof(LoggingBlockType), model.Type)
 			};
+			
+			result.SetValidationResult(model.ValidationResult);
+
+			return result;
 		}
 
 		internal static LoggingBlockModel Map(this LoggingBlockViewModel model)
@@ -28,7 +33,9 @@ namespace LoggingBlock.ViewModels
 				BlockOrigin = model.BlockOrigin,
 				Id = model.Id,
 				Message = model.Message,
-				Type = (LoggingBlockType)Enum.Parse(typeof(LoggingBlockType), model.Type)
+				Type = model.Type != null
+					? (LoggingBlockType) Enum.Parse(typeof(LoggingBlockType), model.Type)
+					: LoggingBlockType.Error
 			};
 		}
 	}

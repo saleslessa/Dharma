@@ -27,3 +27,4 @@ using System.Runtime.CompilerServices;
 //[assembly: AssemblyKeyFile("")]
 
 [assembly: InternalsVisibleTo("Dharma.ItemsBlock.Implementation")]
+[assembly: InternalsVisibleTo("DynamicProxyGenAssembly2")]

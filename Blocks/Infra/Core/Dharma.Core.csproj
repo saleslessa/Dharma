@@ -21,6 +21,7 @@
     <PackageReference Include="Autofac.Extensions.DependencyInjection" Version="4.3.0" />
     <PackageReference Include="MongoDB.Driver" Version="2.7.0" />
     <PackageReference Include="Newtonsoft.Json" Version="11.0.2" />
+    <PackageReference Include="NLog.Config" Version="4.5.9" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Gateway\" />
@@ -38,6 +39,14 @@
   </ItemGroup>
   <ItemGroup>
     <None Remove="Gateway\Gateway.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.AspNetCore.Mvc.Abstractions, Version=2.1.1.0, Culture=neutral, PublicKeyToken=adb9793829ddae60">
+      <HintPath>..\..\..\..\..\..\..\..\..\..\usr\local\share\dotnet\sdk\NuGetFallbackFolder\microsoft.aspnetcore.mvc.abstractions\2.1.1\lib\netstandard2.0\Microsoft.AspNetCore.Mvc.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.Mvc.Core, Version=2.1.1.0, Culture=neutral, PublicKeyToken=adb9793829ddae60">
+      <HintPath>..\..\..\..\..\..\..\..\..\..\usr\local\share\dotnet\sdk\NuGetFallbackFolder\microsoft.aspnetcore.mvc.core\2.1.1\lib\netstandard2.0\Microsoft.AspNetCore.Mvc.Core.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ProjectExtensions>
     <MonoDevelop>

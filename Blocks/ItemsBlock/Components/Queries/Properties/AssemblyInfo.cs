@@ -28,3 +28,4 @@ using System.Runtime.CompilerServices;
 
 [assembly: InternalsVisibleTo("Dharma.ItemsBlock.Implementation")]
 [assembly: InternalsVisibleTo("Dharma.ItemsBlock.Components.Tests")]
+[assembly: InternalsVisibleTo("DynamicProxyGenAssembly2")]

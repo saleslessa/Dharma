@@ -14,13 +14,15 @@ namespace Dharma.ItemsBlock.ViewModels
 	{
 		public static ItemModel Map(this ItemsBlockViewModel model)
 		{
-			// TODO Adjust enum converters
-			return new ItemModel(model.Name, ItemType.Amount, model.Amount, model.Categories, model.Active);
+			return new ItemModel(model.Name, model.Type != null
+					? (ItemType) Enum.Parse(typeof(ItemType), model.Type)
+					: ItemType.Amount, 
+				model.Amount, model.Categories, model.Active);
 		}
 
 		public static ItemsBlockViewModel Map(this ItemModel model)
 		{
-			return new ItemsBlockViewModel()
+			var result = new ItemsBlockViewModel()
 			{
 				Name = model.Name,
 				Amount = model.Amount,
@@ -28,6 +30,10 @@ namespace Dharma.ItemsBlock.ViewModels
 				Categories = model.Categories,
 				Type = Enum.GetName(typeof(ItemType), model.Type)
 			};
+
+			result.SetValidationResult(model.ValidationResult);
+
+			return result;
 		}
 	}
 }

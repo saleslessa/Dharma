@@ -4,8 +4,10 @@
 //       Sales Alencar <lopesdealencar@gmail.com>
 //
 // Copyright (c) 2018 MIT
-using System;
-namespace LoggingBlock.ViewModels
+
+using Dharma.Core;
+
+namespace Dharma.LoggingBlock.ViewModels
 {
 	/// <summary>
 	/// Model that represents a logging information to client blocks. The structure of this ViewModel are:
@@ -16,7 +18,7 @@ namespace LoggingBlock.ViewModels
 	/// | Type | string | Type of message | Possible options are: <value>Info</value>, <value>Warning</value>, <value>Error</value> or <value>Fatal</value> |
 	/// | BlockOrigin | string | Client block name | AuthenticationBlock, ChatBlock, etc. |
 	/// </summary>
-	public class LoggingBlockViewModel
+	public class LoggingBlockViewModel : BaseViewModel
 	{
 		
 		public string Id { get; set; }
@@ -27,5 +29,6 @@ namespace LoggingBlock.ViewModels
 
 		public string BlockOrigin { get; set; }
 
+		protected override ValidationResult ValidationResult { get; set; }
 	}
 }

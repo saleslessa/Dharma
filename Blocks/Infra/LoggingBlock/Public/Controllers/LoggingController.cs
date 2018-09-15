@@ -8,127 +8,80 @@
 using System;
 using System.Linq;
 using Autofac;
-using Dharma.Core.Gateway;
+using Dharma.Core;
 using Dharma.LoggingBlock.Implementation;
 using Dharma.LoggingBlock.Interfaces;
-using Dharma.LoggingBlock.Models;
-using LoggingBlock.ViewModels;
+using Dharma.LoggingBlock.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Dharma.LoggingBlock.Controllers
 {
-	/// <summary>
-	/// Logging Block. Responsible for logging information for other blocks provided through a RESTful API 
-	/// <para>
-	/// #### Operations available:
-	/// </para>
-	/// | Type | Operation | Behavior |
-	/// | ---- | --------- | ------ |
-	/// | GET | <value>[endpoint]</value>/get/{id} | Endpoint that returns a specific logging through its ID |
-	/// | GET | <value>[endpoint]</value>/{blockName} | Endpoint that returns all logging information about a specific Block |
-	/// | GET | <value>[endpoint]</value>/{blockName}/{type} | Endpoint that returns all logging information about a specific block and type | 
-	/// | POST | <value>[endpoint]</value> | Endpoint to save logging information. It needs to pass a full <value>LoggingBlockViewModel</value> strutucture in body |
-	/// </summary>
-	[Route("api/[controller]")]
-	[ApiController]
-	public class LoggingController : ControllerBase
-	{
-		private readonly ContainerBuilder _container;
+    /// <summary>
+    /// Logging Block. Responsible for logging information for other blocks provided through a RESTful API 
+    /// <para>
+    /// #### Operations available:
+    /// </para>
+    /// | Type | Operation | Behavior |
+    /// | ---- | --------- | ------ |
+    /// | GET | <value>[endpoint]</value>/get/{id} | Endpoint that returns a specific logging through its ID |
+    /// | GET | <value>[endpoint]</value>/{blockName} | Endpoint that returns all logging information about a specific Block |
+    /// | GET | <value>[endpoint]</value>/{blockName}/{type} | Endpoint that returns all logging information about a specific block and type | 
+    /// | POST | <value>[endpoint]</value> | Endpoint to save logging information. It needs to pass a full <value>LoggingBlockViewModel</value> strutucture in body |
+    /// </summary>
+    [Route("api/[controller]")]
+    [ApiController]
+    public class LoggingController : DharmaController, IDisposable
+    {
+        private readonly ILoggingQueries _queries;
+        private readonly ILoggingCommands _commands;
+        private readonly ILifetimeScope _lifetimeScope;
 
-		public LoggingController()
-		{
-			_container = new ContainerBuilder();
-			_container.RegisterType<LoggingQueryImplementation>().As<ILoggingQueries>();
-			_container.RegisterType<LoggingCommandImplementation>().As<ILoggingCommands>();
+        public LoggingController()
+        {
+            var container = new ContainerBuilder();
+            container.RegisterType<LoggingQueryImplementation>().As<ILoggingQueries>();
+            container.RegisterType<LoggingCommandImplementation>().As<ILoggingCommands>();
 
-		}
+            _lifetimeScope = container.Build().BeginLifetimeScope();
+            _queries = _lifetimeScope.Resolve<ILoggingQueries>();
+            _commands = _lifetimeScope.Resolve<ILoggingCommands>();
+        }
 
-		[HttpGet("get/{id}")]
-		public IActionResult Get(string id)
-		{
-			try
-			{
-				using(var lifeTime = _container.Build().BeginLifetimeScope())
-				{
-					var query = lifeTime.Resolve<ILoggingQueries>();
-					return Ok(query.GetLoggingFromId(id).Map());	
-				}
-			}
-			catch (Exception e)
-			{
-				return BadRequest(e.Message);
-			}
-		}
+        [HttpGet("get/{id}")]
+        public IActionResult Get(string id)
+        {
+            var result = _queries.GetLoggingFromId(id).Map();
+            return Ok(result);
+        }
 
-		[HttpGet("{blockName}")]
-		public IActionResult GetByBlockName(string blockName)
-		{
-			try
-			{
-				using (var lifeTime = _container.Build().BeginLifetimeScope())
-				{
-					var query = lifeTime.Resolve<ILoggingQueries>();
-					return Ok(query.ListLoggingFromBlock(blockName).Select(t => t.Map()));
-				}
-			}
-			catch (Exception ex)
-			{
-				return BadRequest(ex.Message);
-			}
-		}
+        [HttpGet("{blockName}")]
+        public IActionResult GetByBlockName(string blockName)
+        {
+            var models = _queries.ListLoggingFromBlock(blockName).ToList();
+            return GenericGet(models.Select(t => t.Map()));
+        }
 
-		[HttpGet("{blockName}/{type}")]
-		public IActionResult GetByBlockNameAndType(string blockName, string type)
-		{
-			try
-			{
-				using (var lifeTime = _container.Build().BeginLifetimeScope())
-				{
-					var query = lifeTime.Resolve<ILoggingQueries>();
-					return Ok(query.ListLoggingFromBlockNameAndType(blockName, type).Select(t => t.Map()));
-				}
-			}
-			catch (Exception ex)
-			{
-				return BadRequest(ex.Message);
-			}
-		}
+        [HttpGet("{blockName}/{type}")]
+        public IActionResult GetByBlockNameAndType(string blockName, string type)
+        {
+            var models = _queries.ListLoggingFromBlockNameAndType(blockName, type).ToList();
+            return GenericGet(models.Select(t => t.Map()));
+        }
 
-		[HttpGet("gateway/{service}")]
-		public IActionResult TestGateway(string service)
-		{
-			try
-			{
-				return Ok(Gateway.GetGateway(service));
-			}
-			catch (Exception ex)
-			{
-				return BadRequest(ex.Message);
-			}
-		}
+        [HttpPost]
+        public IActionResult Post([FromBody] LoggingBlockViewModel logging)
+        {
+            var model = _commands.AddLog(logging.Map());
+            
+            if (!model.IsValid())
+                return BadRequest(model.ValidationResult.ListAll());
 
-		[HttpPost]
-		public IActionResult Post([FromBody]LoggingBlockViewModel logging)
-		{
-			try
-			{
-				using (var lifeTime = _container.Build().BeginLifetimeScope())
-				{
-					var command = lifeTime.Resolve<ILoggingCommands>();
-					var typeEnum = logging.Type != null ? (LoggingBlockType)Enum.Parse(typeof(LoggingBlockType), logging.Type) : LoggingBlockType.Error;
+            return Ok(model.Map());
+        }
 
-					var model = command.AddLog(logging.BlockOrigin, logging.Message, typeEnum);
-					if (!model.IsValid())
-						return BadRequest(model.ValidationResult.ListAll());
-
-					return Ok(model.Map());
-				}
-
-			}
-			catch (Exception ex)
-			{
-				return BadRequest(ex.Message);
-			}
-		}
-	}
+        public void Dispose()
+        {
+            _lifetimeScope?.Dispose();
+        }
+    }
 }

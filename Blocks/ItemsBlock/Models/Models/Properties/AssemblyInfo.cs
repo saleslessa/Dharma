@@ -33,3 +33,4 @@ using System.Runtime.CompilerServices;
 [assembly: InternalsVisibleTo("Dharma.ItemsBlock.interfaces")]
 [assembly: InternalsVisibleTo("Dharma.ItemsBlock.Implementation")]
 [assembly: InternalsVisibleTo("Dharma.ItemsBlock")]
+[assembly: InternalsVisibleTo("DynamicProxyGenAssembly2")]

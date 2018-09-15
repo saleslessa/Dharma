@@ -6,10 +6,11 @@
 // Copyright (c) 2018 MIT
 //
 using System.Collections.Generic;
+using Dharma.Core;
 
 namespace Dharma.ItemsBlock.ViewModels
 {
-	public class ItemsBlockViewModel
+	public class ItemsBlockViewModel : BaseViewModel
 	{
 		public string Name { get; set; }
 
@@ -20,5 +21,7 @@ namespace Dharma.ItemsBlock.ViewModels
 		public IEnumerable<string> Categories { get; set; }
 
 		public bool Active { get; set; }
+		
+		protected override ValidationResult ValidationResult { get; set; }
 	}
 }

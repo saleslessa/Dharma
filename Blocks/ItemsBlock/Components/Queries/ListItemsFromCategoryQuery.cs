@@ -21,7 +21,7 @@ namespace Dharma.ItemsBlock.Components.Queries
 			_category = category ?? category.Trim().ToLower();
 		}
 
-		protected override Expression<Func<ItemModel, bool>> _filter => (t => t.Active && t.Categories.Any(c => c.Trim().ToLower().Contains(_category)));
+		protected override Expression<Func<ItemModel, bool>> _filter => (t => t.Active && t.Categories.Contains(_category));
 
 	}
 }

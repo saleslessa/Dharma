@@ -10,6 +10,6 @@ namespace Dharma.LoggingBlock.Interfaces
 {
 	internal interface ILoggingCommands
 	{
-		LoggingBlockModel AddLog(string origin, string message, LoggingBlockType type  = LoggingBlockType.Warning);
+		LoggingBlockModel AddLog(LoggingBlockModel model);
 	}
 }

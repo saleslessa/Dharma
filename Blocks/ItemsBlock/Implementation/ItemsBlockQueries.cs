@@ -9,6 +9,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using Dharma.Core;
 using Dharma.ItemsBlock.Components.Queries;
 using Dharma.ItemsBlock.Implementation.Properties;
 using Dharma.ItemsBlock.Interfaces;
@@ -19,14 +20,6 @@ namespace Dharma.ItemsBlock.Implementation
 {
 	internal class ItemsBlockQueries : IItemsBlockQueries
 	{
-		
-		private readonly Logger _log;
-
-		public ItemsBlockQueries()
-		{
-			_log = LogManager.GetCurrentClassLogger();
-		}
-		
 		public IEnumerable<ItemModel> ListAllItems()
 		{
 			try
@@ -35,11 +28,8 @@ namespace Dharma.ItemsBlock.Implementation
 			}
 			catch (Exception e)
 			{
-				var errorId = Guid.NewGuid();
-				_log.Error($"{errorId} - {e.Message}");
-				var result = new ItemModel();
-				result.ValidationResult.Add(string.Format(Resources.DefaultErrorMessage, errorId));
-				return new List<ItemModel>() {result };
+				var result = ErrorHandler.LogError<ItemModel>(e);
+				return new List<ItemModel>() {result};
 			}
 		}
 
@@ -58,11 +48,8 @@ namespace Dharma.ItemsBlock.Implementation
 			}
 			catch (Exception e)
 			{
-				var errorId = Guid.NewGuid();
-				_log.Error($"{errorId} - {e.Message}");
-				var result = new ItemModel();
-				result.ValidationResult.Add(string.Format(Resources.DefaultErrorMessage, errorId));
-				return new List<ItemModel>() {result };
+				var result = ErrorHandler.LogError<ItemModel>(e);
+				return new List<ItemModel>() {result};
 			}
 		}
 
@@ -74,11 +61,8 @@ namespace Dharma.ItemsBlock.Implementation
 			}
 			catch (Exception e)
 			{
-				var errorId = Guid.NewGuid();
-				_log.Error($"{errorId} - {e.Message}");
-				var result = new ItemModel();
-				result.ValidationResult.Add(string.Format(Resources.DefaultErrorMessage, errorId));
-				return new List<ItemModel>() {result };
+				var result = ErrorHandler.LogError<ItemModel>(e);
+				return new List<ItemModel>() {result};
 			}
 		}
 	}

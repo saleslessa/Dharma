@@ -9,6 +9,7 @@
 using System;
 using System.Linq;
 using Autofac;
+using Dharma.Core;
 using Dharma.ItemsBlock.Implementation;
 using Dharma.ItemsBlock.Interfaces;
 using Dharma.ItemsBlock.ViewModels;
@@ -18,50 +19,58 @@ namespace Dharma.ItemsBlock.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class ItemsController : ControllerBase
+    public class ItemsController : DharmaController, IDisposable
     {
-        private readonly ContainerBuilder _container;
+        private readonly IItemsBlockQueries _queries;
+        private readonly IItemsBlockCommands _commands;
+        private readonly ILifetimeScope _lifetimeScope;
 
         public ItemsController()
         {
-            _container = new ContainerBuilder();
-            _container.RegisterType<ItemsBlockQueries>().As<IItemsBlockQueries>();
-            _container.RegisterType<ItemsBlockCommands>().As<IItemsBlockCommands>();
+            var container = new ContainerBuilder();
+            container.RegisterType<ItemsBlockQueries>().As<IItemsBlockQueries>();
+            container.RegisterType<ItemsBlockCommands>().As<IItemsBlockCommands>();
+
+            _lifetimeScope = container.Build().BeginLifetimeScope();
+            _queries = _lifetimeScope.Resolve<IItemsBlockQueries>();
+            _commands = _lifetimeScope.Resolve<IItemsBlockCommands>();
         }
 
-        [HttpGet("get/{id}")]
-        public IActionResult Get(string id)
+        [HttpGet("GetFromCategory/{category}")]
+        public IActionResult GetFromCategory(string category)
         {
-            throw new NotImplementedException();
+            var result = _queries.ListItemsFromCategory(new[] {category});
+            return GenericGet(result.Select(t => t.Map()));
         }
 
-        [HttpGet("")]
+        [HttpGet("GetFromName/{name}")]
+        public IActionResult GetFromName(string name)
+        {
+            var models = _queries.ListItemsFromName(name);
+            return GenericGet(models.Select(t => t.Map()));
+        }
+
+        [HttpGet]
         public IActionResult Get()
         {
-            using (var lifeTime = _container.Build().BeginLifetimeScope())
-            {
-                var query = lifeTime.Resolve<IItemsBlockQueries>();
-
-                var result = query.ListAllItems();
-
-                return Ok(result.Select(t => t.Map()));
-            }
+            var models = _queries.ListAllItems();
+            return GenericGet(models.Select(t => t.Map()));
         }
 
         [HttpPost]
         public IActionResult Post([FromBody] ItemsBlockViewModel model)
         {
-            using (var lifeTime = _container.Build().BeginLifetimeScope())
-            {
-                var command = lifeTime.Resolve<IItemsBlockCommands>();
+            var result = _commands.Add(model.Map());
 
-                var result = command.Add(model.Map());
+            if (!result.IsValid())
+                return BadRequest(result.ValidationResult.ListAll());
 
-                if (!result.IsValid())
-                    return BadRequest(result.ValidationResult.ListAll());
+            return Ok(result.Map());
+        }
 
-                return Ok(result.Map());
-            }
+        public void Dispose()
+        {
+            _lifetimeScope?.Dispose();
         }
     }
 }

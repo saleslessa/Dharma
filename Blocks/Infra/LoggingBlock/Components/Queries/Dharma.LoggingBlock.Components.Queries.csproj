@@ -13,17 +13,13 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>LoggingBlock.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Condition=" '$(EnableDefaultEmbeddedResourceItems)' == 'true' " Update="Properties\LoggingBlockQuery.resx">
-      <LastGenOutput>LoggingBlock.Designer.cs</LastGenOutput>
-    </EmbeddedResource>
-  </ItemGroup>
-  <ItemGroup>
-    <Compile Condition=" '$(EnableDefaultCompileItems)' == 'true' " Update="Properties\LoggingBlock.Designer.cs">
-      <DependentUpon>LoggingBlockQuery.resx</DependentUpon>
-    </Compile>
+    <EmbeddedResource Remove="Properties\LoggingBlockQuery.resx" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\..\Core\Dharma.Core.csproj" />
     <ProjectReference Include="..\..\Models\Logging.Models\Dharma.LoggingBlock.Models.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="Properties\LoggingBlock.Designer.cs" />
   </ItemGroup>
 </Project>

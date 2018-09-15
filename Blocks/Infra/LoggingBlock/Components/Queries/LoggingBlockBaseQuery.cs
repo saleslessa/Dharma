@@ -14,14 +14,14 @@ namespace Dharma.LoggingBlock.Components.Queries
 {
 	internal abstract class LoggingBlockBaseQuery : BaseQuery<LoggingBlockModel>
 	{
-		protected override string server => LoggingBlockQuery.Server;
+		protected override string server => Resources.Server;
 
-		protected override int port => Convert.ToInt32(LoggingBlockQuery.Port);
+		protected override int port => Convert.ToInt32(Resources.Port);
 
-		protected override string database => LoggingBlockQuery.Database;
+		protected override string database => Resources.Database;
 
-		protected override string user => LoggingBlockQuery.User;
+		protected override string user => Resources.User;
 
-		protected override string pwd => LoggingBlockQuery.Pwd;
+		protected override string pwd => Resources.Pwd;
 	}
 }

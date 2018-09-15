@@ -3,15 +3,15 @@
 
 ## Contents
 
-- [LoggingBlockViewModel](#T-LoggingBlock-ViewModels-LoggingBlockViewModel 'LoggingBlock.ViewModels.LoggingBlockViewModel')
+- [LoggingBlockViewModel](#T-Dharma-LoggingBlock-ViewModels-LoggingBlockViewModel 'Dharma.LoggingBlock.ViewModels.LoggingBlockViewModel')
 - [LoggingController](#T-Dharma-LoggingBlock-Controllers-LoggingController 'Dharma.LoggingBlock.Controllers.LoggingController')
 
-<a name='T-LoggingBlock-ViewModels-LoggingBlockViewModel'></a>
+<a name='T-Dharma-LoggingBlock-ViewModels-LoggingBlockViewModel'></a>
 ## LoggingBlockViewModel `type`
 
 ##### Namespace
 
-LoggingBlock.ViewModels
+Dharma.LoggingBlock.ViewModels
 
 ##### Summary
 

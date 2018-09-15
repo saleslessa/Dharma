@@ -9,6 +9,7 @@
 using System;
 using System.Dynamic;
 using System.Text;
+using Dharma.Core;
 using Dharma.Core.Gateway;
 using Dharma.ItemsBlock.Components.Commands;
 using Dharma.ItemsBlock.Implementation.Properties;
@@ -21,13 +22,6 @@ namespace Dharma.ItemsBlock.Implementation
 {
     internal class ItemsBlockCommands : IItemsBlockCommands
     {
-        private readonly Logger _log;
-
-        public ItemsBlockCommands()
-        {
-            _log = LogManager.GetCurrentClassLogger();
-        }
-
         public ItemModel Add(ItemModel model)
         {
             try
@@ -45,26 +39,29 @@ namespace Dharma.ItemsBlock.Implementation
             }
             catch (Exception e)
             {
-                var errorId = Guid.NewGuid();
-                _log.Error($"{errorId} - {e.Message}");
-                var result = new ItemModel();
-                result.ValidationResult.Add(string.Format(Resources.DefaultErrorMessage, errorId));
-                return result;
+                return ErrorHandler.LogError<ItemModel>(e);
             }
         }
 
         public ItemModel Update(ItemModel model)
         {
-            if (!model.IsValid())
+            try
             {
-                LogError(model, "update");
-            }
-            else
-            {
-                new UpdateItemModelCommand(model).Run();
-            }
+                if (!model.IsValid())
+                {
+                    LogError(model, "update");
+                }
+                else
+                {
+                    new UpdateItemModelCommand(model).Run();
+                }
 
-            return model;
+                return model;
+            }
+            catch (Exception e)
+            {
+                return ErrorHandler.LogError<ItemModel>(e);
+            }
         }
 
         private static void LogError(ItemModel model, string operation)
@@ -74,7 +71,7 @@ namespace Dharma.ItemsBlock.Implementation
             dynamic errorObj = new ExpandoObject();
 
             errorObj.BlockOrigin = "ItemsBlock";
-            errorObj.Type = "Error";
+            errorObj.Type = "Warning";
 
 
             var errorMessage = new StringBuilder();
