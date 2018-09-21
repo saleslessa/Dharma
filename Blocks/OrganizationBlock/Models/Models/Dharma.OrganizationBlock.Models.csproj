@@ -1,0 +1,31 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Infra\Core\Dharma.Core.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Validations\ItemModel" />
+    <Folder Include="Validations\OrganizationModel" />
+    <Folder Include="Validations\OwnersModel" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="Properties\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Remove="Properties\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Properties\**" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+</Project>

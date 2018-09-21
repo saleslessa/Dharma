@@ -10,8 +10,4 @@
     <ProjectReference Include="..\Components\Queries\Dharma.ItemsBlock.Components.Queries.csproj" />
     <ProjectReference Include="..\Components\Commands\Dharma.ItemsBlock.Components.Commands.csproj" />
   </ItemGroup>
-
-  <ItemGroup>
-    <None Remove="NLog.config" />
-  </ItemGroup>
 </Project>

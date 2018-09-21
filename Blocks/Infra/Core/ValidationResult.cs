@@ -36,6 +36,18 @@ namespace Dharma.Core
 		}
 
 		/// <summary>
+		/// Add a list of messages
+		/// </summary>
+		/// <param name="messages">List of messages</param>
+		public void Add(Dictionary<Guid, string> messages)
+		{
+			foreach (var message in messages.Where(t => !string.IsNullOrEmpty(t.Value?.Trim())))
+			{
+				Errors.Add(message.Key, message.Value);
+			}
+		}
+
+		/// <summary>
 		/// Finds the by key.
 		/// </summary>
 		/// <returns>The by key.</returns>
@@ -61,7 +73,7 @@ namespace Dharma.Core
 		/// <returns>The all.</returns>
 		public IEnumerable<string> ListAll()
 		{
-      return Errors.Select(t => t.Value).AsEnumerable();
+			return Errors.Select(t => t.Value).AsEnumerable();
 		}
 
 		/// <summary>

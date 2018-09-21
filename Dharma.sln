@@ -73,7 +73,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dharma.OrganizationBlock.Co
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dharma.OrganizationBlock.Tests", "Blocks\OrganizationBlock\Components\Tests\Dharma.OrganizationBlock.Tests.csproj", "{B330A90C-B120-4EC5-ABD7-53ADB75DE8F5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dharma.OrganizationBlock.Models", "Blocks\OrganizationBlock\Models\Dharma.OrganizationBlock.Models.csproj", "{141F36DD-B872-4BE7-9A0F-87E412981332}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dharma.OrganizationBlock.Models", "Blocks\OrganizationBlock\Models\Models\Dharma.OrganizationBlock.Models.csproj", "{141F36DD-B872-4BE7-9A0F-87E412981332}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dharma.ItemsBlock.Models", "Blocks\ItemsBlock\Models\Models\Dharma.ItemsBlock.Models.csproj", "{141396A9-43B0-4DFD-9983-EA8EA87E75B3}"
 EndProject
@@ -92,6 +92,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dharma.ItemsBlock.Implementation", "Blocks\ItemsBlock\Implementation\Dharma.ItemsBlock.Implementation.csproj", "{7D0BBD2B-91BA-465F-9DBA-B3D5F521B86C}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dharma.ItemsBlock", "Blocks\ItemsBlock\Public\Dharma.ItemsBlock.csproj", "{9CD3F8F4-726A-4D82-9906-7ACF602F5253}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dharma.OrganizationBlock.Models.Tests", "Blocks\OrganizationBlock\Models\Tests\Dharma.OrganizationBlock.Models.Tests.csproj", "{BD527762-A0D8-404F-8FF0-BBEA382ED2C6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -179,6 +181,10 @@ Global
 		{9CD3F8F4-726A-4D82-9906-7ACF602F5253}.Debug|x86.Build.0 = Debug|Any CPU
 		{9CD3F8F4-726A-4D82-9906-7ACF602F5253}.Release|x86.ActiveCfg = Release|Any CPU
 		{9CD3F8F4-726A-4D82-9906-7ACF602F5253}.Release|x86.Build.0 = Release|Any CPU
+		{BD527762-A0D8-404F-8FF0-BBEA382ED2C6}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{BD527762-A0D8-404F-8FF0-BBEA382ED2C6}.Debug|x86.Build.0 = Debug|Any CPU
+		{BD527762-A0D8-404F-8FF0-BBEA382ED2C6}.Release|x86.ActiveCfg = Release|Any CPU
+		{BD527762-A0D8-404F-8FF0-BBEA382ED2C6}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{63D7D4DA-FD14-484D-AA0B-E3ACA8408DCE} = {3EE496A1-5955-4918-9FCF-0AE81131B50C}
@@ -224,5 +230,6 @@ Global
 		{30C6B8B9-A7F5-49B8-9D53-8E6B2AAE157E} = {8E74FCF1-707D-4A7F-85C3-87DE8069F0C3}
 		{7D0BBD2B-91BA-465F-9DBA-B3D5F521B86C} = {8720E9BF-6173-43F6-933E-0B1969C3FBFF}
 		{9CD3F8F4-726A-4D82-9906-7ACF602F5253} = {73F7BCDE-732E-4095-9A14-65C44BA1ABC1}
+		{BD527762-A0D8-404F-8FF0-BBEA382ED2C6} = {4392B7B7-70EA-4AA2-8BD1-D517ED9B13B2}
 	EndGlobalSection
 EndGlobal

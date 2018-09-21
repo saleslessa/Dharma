@@ -24,8 +24,10 @@ namespace Dharma.Core
 
             errorInfo.Append("\n---------------\n\n");
 
-            errorInfo.Append($"[{errorId}] - {DateTime.Now} - {e.Message}\n\n");
+            errorInfo.Append($"[{errorId}] - {e.Message}\n\n");
+            errorInfo.Append($"[Inner Exception] - {e.InnerException}\n\n");
             errorInfo.Append($"[Stack Trace] - {e.StackTrace}\n\n");
+            
             
             errorInfo.Append("--------------\n");
             

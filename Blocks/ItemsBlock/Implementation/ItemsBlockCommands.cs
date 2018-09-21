@@ -8,15 +8,14 @@
 
 using System;
 using System.Dynamic;
+using System.Runtime.CompilerServices;
 using System.Text;
 using Dharma.Core;
 using Dharma.Core.Gateway;
 using Dharma.ItemsBlock.Components.Commands;
-using Dharma.ItemsBlock.Implementation.Properties;
 using Dharma.ItemsBlock.Interfaces;
 using Dharma.ItemsBlock.Models;
 using Newtonsoft.Json;
-using NLog;
 
 namespace Dharma.ItemsBlock.Implementation
 {
@@ -28,7 +27,7 @@ namespace Dharma.ItemsBlock.Implementation
             {
                 if (!model.IsValid())
                 {
-                    LogError(model, "add");
+                    LogError(model);
                 }
                 else
                 {
@@ -49,7 +48,7 @@ namespace Dharma.ItemsBlock.Implementation
             {
                 if (!model.IsValid())
                 {
-                    LogError(model, "update");
+                    LogError(model);
                 }
                 else
                 {
@@ -64,7 +63,7 @@ namespace Dharma.ItemsBlock.Implementation
             }
         }
 
-        private static void LogError(ItemModel model, string operation)
+        private static void LogError(ItemModel model, [CallerMemberName] string caller = "Unknown")
         {
             if (model == null) throw new ArgumentNullException(nameof(model));
             
@@ -76,9 +75,9 @@ namespace Dharma.ItemsBlock.Implementation
 
             var errorMessage = new StringBuilder();
             errorMessage.Append("Following Errors occured while trying to ");
-            errorMessage.Append(operation);
+            errorMessage.Append(caller);
             errorMessage.Append(" ItemViewModel object: ");
-
+			
             foreach (var validationMessage in model.ValidationResult.Errors)
             {
                 errorMessage.Append($"{validationMessage.Value}; ");
@@ -87,7 +86,14 @@ namespace Dharma.ItemsBlock.Implementation
             errorObj.Message = errorMessage.ToString();
             var jsonObject = JsonConvert.SerializeObject(errorObj);
 
-            Gateway.CallBlock<object>("LoggingBlock", HttpVerbsEnum.POST, jsonObject);
+            try
+            {
+                Gateway.CallBlock<object>("LoggingBlock", HttpVerbsEnum.POST, jsonObject);
+            }
+            catch (Exception e)
+            {
+                ErrorHandler.LogError<ItemModel>(e);
+            }
         }
     }
 }

@@ -15,7 +15,7 @@ namespace Dharma.ItemsBlock.Interfaces
 	{
 		IEnumerable<ItemModel> ListAllItems();
 
-		IEnumerable<ItemModel> ListItemsFromCategory(string[] categories);
+		IEnumerable<ItemModel> ListItemsFromCategory(IEnumerable<string> categories);
 
 		IEnumerable<ItemModel> ListItemsFromName(string name);
 	}

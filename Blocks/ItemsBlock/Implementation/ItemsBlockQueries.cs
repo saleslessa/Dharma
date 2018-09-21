@@ -18,52 +18,52 @@ using NLog;
 
 namespace Dharma.ItemsBlock.Implementation
 {
-	internal class ItemsBlockQueries : IItemsBlockQueries
-	{
-		public IEnumerable<ItemModel> ListAllItems()
-		{
-			try
-			{
-				return new ListAllItemsQuery().Run();
-			}
-			catch (Exception e)
-			{
-				var result = ErrorHandler.LogError<ItemModel>(e);
-				return new List<ItemModel>() {result};
-			}
-		}
+    internal class ItemsBlockQueries : IItemsBlockQueries
+    {
+        public IEnumerable<ItemModel> ListAllItems()
+        {
+            try
+            {
+                return new ListAllItemsQuery().Run();
+            }
+            catch (Exception e)
+            {
+                var result = ErrorHandler.LogError<ItemModel>(e);
+                return new List<ItemModel>() {result};
+            }
+        }
 
-		public IEnumerable<ItemModel> ListItemsFromCategory(string[] categories)
-		{
-			try
-			{
-				var result = new List<ItemModel>();
+        public IEnumerable<ItemModel> ListItemsFromCategory(IEnumerable<string> categories)
+        {
+            try
+            {
+                var result = new List<ItemModel>();
 
-				foreach (var category in categories)
-				{
-					result.AddRange(new ListItemsFromCategoryQuery(category).Run());
-				}
+                foreach (var category in categories)
+                {
+                    result.AddRange(new ListItemsFromCategoryQuery(category).Run());
+                }
 
-				return result.Distinct();
-			}
-			catch (Exception e)
-			{
-				var result = ErrorHandler.LogError<ItemModel>(e);
-				return new List<ItemModel>() {result};
-			}
-		}
+                return result.Distinct();
+            }
+            catch (Exception e)
+            {
+                var result = ErrorHandler.LogError<ItemModel>(e);
+                return new List<ItemModel>() {result};
+            }
+        }
 
-		public IEnumerable<ItemModel> ListItemsFromName(string name)
-		{
-			try
-			{
-				return new ListItemsFromNameQuery(name).Run();
-			}
-			catch (Exception e)
-			{
-				var result = ErrorHandler.LogError<ItemModel>(e);
-				return new List<ItemModel>() {result};
-			}
-		}
-	}
+        public IEnumerable<ItemModel> ListItemsFromName(string name)
+        {
+            try
+            {
+                return new ListItemsFromNameQuery(name).Run();
+            }
+            catch (Exception e)
+            {
+                var result = ErrorHandler.LogError<ItemModel>(e);
+                return new List<ItemModel>() {result};
+            }
+        }
+    }
 }
