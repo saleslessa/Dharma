@@ -30,7 +30,7 @@ The project is designed to use distributed architecture with following tools, pa
 - .NET Core 2.1
 - WEB API
 - CQRS
-- Microservices approach
+- Service Oriented approach
 - AutoFac for Dependency Injection
 - Mongodb Driver
 
