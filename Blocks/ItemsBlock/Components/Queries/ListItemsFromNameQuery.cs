@@ -17,7 +17,7 @@ namespace Dharma.ItemsBlock.Components.Queries
 
 		public ListItemsFromNameQuery(string name)
 		{
-			_name = name ?? name.ToLower().Trim();
+			_name = name == null ? string.Empty : name.ToLower().Trim();
 		}
 
 		protected override Expression<Func<ItemModel, bool>> _filter => (t => t.Active && t.Name.Trim().ToLower().Contains(_name));

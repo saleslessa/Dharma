@@ -18,7 +18,7 @@ namespace Dharma.ItemsBlock.Components.Queries
 
 		public ListItemsFromCategoryQuery(string category)
 		{
-			_category = category ?? category.Trim().ToLower();
+			_category = string.IsNullOrEmpty(category) ? string.Empty : category.Trim().ToLower();
 		}
 
 		protected override Expression<Func<ItemModel, bool>> _filter => (t => t.Active && t.Categories.Contains(_category));
