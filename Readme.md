@@ -16,7 +16,7 @@ The global software idea is to provide a way to connects these three sorts of us
 
 ## Global design
 
-The project uses microservices approach. For that, each entity is managed by a service called `block`. To serve these blocks, there is a *core library* that abstracts interaction between blocks, logging / tracing information and also provides the interfaces to be implemented by blocks in order to make blocks follow same pattern. Below is a diagram that show a general idea of the project architecture:
+The project uses service oriented architecture approach. For that, each entity is managed by a service called `block`. To serve these blocks, there is a *core library* that abstracts interaction between blocks, logging / tracing information and also provides the interfaces to be implemented by blocks in order to make blocks follow same pattern. Below is a diagram that show a general idea of the project architecture:
 
 ![Global Design](images/globalDesign.png)
 
