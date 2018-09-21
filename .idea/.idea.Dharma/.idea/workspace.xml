@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0612e00d-fa03-4655-a1af-7ff76544d6ab" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Blocks/ItemsBlock/Components/Queries/ListItemsFromCategoryQuery.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Blocks/ItemsBlock/Components/Queries/ListItemsFromCategoryQuery.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Blocks/ItemsBlock/Components/Queries/ListItemsFromNameQuery.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Blocks/ItemsBlock/Components/Queries/ListItemsFromNameQuery.cs" afterDir="false" />
-    </list>
+    <list default="true" id="0612e00d-fa03-4655-a1af-7ff76544d6ab" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,7 +12,7 @@
     <session id="1129233214">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="9" />
+          <entry key="project.closed" value="10" />
           <entry key="project.open.time.11" value="1" />
           <entry key="project.open.time.4" value="1" />
           <entry key="project.open.time.6" value="1" />
@@ -70,120 +67,7 @@
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Blocks/OrganizationBlock/Models/Tests/AddressModelTests.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="339">
-              <caret line="50" column="5" selection-start-line="50" selection-start-column="5" selection-end-line="50" selection-end-column="5" />
-              <folding>
-                <marker date="1537522417080" expanded="false" signature="6:36" ph="..." />
-                <marker date="1537522417080" expanded="true" signature="85:1296" ph="{...}" />
-                <marker date="1537522417080" expanded="true" signature="140:1294" ph="{...}" />
-                <marker date="1537522417080" expanded="true" signature="222:611" ph="{...}" />
-                <marker date="1537522417080" expanded="true" signature="311:482" ph="{...}" />
-                <marker date="1537522417080" expanded="true" signature="893:1288" ph="{...}" />
-                <marker date="1537522417080" expanded="true" signature="982:1146" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Blocks/ItemsBlock/Public/Controllers/ItemsController.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-28">
-              <caret line="10" column="11" selection-start-line="10" selection-start-column="11" selection-end-line="10" selection-end-column="11" />
-              <folding>
-                <marker date="1537386249055" expanded="true" signature="0:117" ph="/* ItemsController.cs ... */" />
-                <marker date="1537386249055" expanded="true" signature="125:329" ph="..." />
-                <marker date="1537386249055" expanded="true" signature="370:2234" ph="{...}" />
-                <marker date="1537386249055" expanded="true" signature="489:2232" ph="{...}" />
-                <marker date="1537386249055" expanded="true" signature="695:1143" ph="{...}" />
-                <marker date="1537386249055" expanded="true" signature="1254:1409" ph="{...}" />
-                <marker date="1537386249055" expanded="true" signature="1504:1643" ph="{...}" />
-                <marker date="1537386249055" expanded="true" signature="1697:1827" ph="{...}" />
-                <marker date="1537386249055" expanded="true" signature="1919:2136" ph="{...}" />
-                <marker date="1537386249055" expanded="true" signature="2167:2226" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Blocks/ItemsBlock/Components/Queries/ItemsBlockBaseQuery.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <folding>
-                <marker date="1536686701993" expanded="true" signature="0:121" ph="/* ItemsBlockBaseQuery.cs ... */" />
-                <marker date="1536686701993" expanded="false" signature="128:241" ph="..." />
-                <marker date="1536686701993" expanded="true" signature="289:686" ph="{...}" />
-                <marker date="1536686701993" expanded="true" signature="359:684" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Blocks/ItemsBlock/Components/Queries/ListAllItemsQuery.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <folding>
-                <marker date="1536686825317" expanded="true" signature="0:119" ph="/* ListAllItemsQuery.cs ... */" />
-                <marker date="1536686825317" expanded="false" signature="126:235" ph="..." />
-                <marker date="1536686825317" expanded="true" signature="283:432" ph="{...}" />
-                <marker date="1536686825317" expanded="true" signature="341:430" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Blocks/ItemsBlock/Components/Queries/ListItemsFromCategoryQuery.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="20" column="97" selection-start-line="20" selection-start-column="97" selection-end-line="20" selection-end-column="97" />
-              <folding>
-                <marker date="1537551869491" expanded="true" signature="0:127" ph="/* GetItemsFromCategoryQuery.cs ... */" />
-                <marker date="1537551869491" expanded="false" signature="134:223" ph="..." />
-                <marker date="1537551869491" expanded="true" signature="271:656" ph="{...}" />
-                <marker date="1537551869491" expanded="true" signature="338:654" ph="{...}" />
-                <marker date="1537551869491" expanded="true" signature="432:530" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Blocks/ItemsBlock/Components/Queries/ListItemsFromNameQuery.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="15" column="38" selection-start-line="15" selection-start-column="38" selection-end-line="15" selection-end-column="38" />
-              <folding>
-                <marker date="1537551809972" expanded="true" signature="0:124" ph="/* ListItemsFromNameQuery.cs ... */" />
-                <marker date="1537551809972" expanded="true" signature="131:201" ph="..." />
-                <marker date="1537551809972" expanded="true" signature="249:599" ph="{...}" />
-                <marker date="1537551809972" expanded="true" signature="312:597" ph="{...}" />
-                <marker date="1537551809972" expanded="true" signature="394:466" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Blocks/OrganizationBlock/Models/Tests/OrganizationModelTests.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="112">
-              <caret line="7" column="8" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="8" />
-              <folding>
-                <marker date="1537551344567" expanded="true" signature="71:154" ph="{...}" />
-                <marker date="1537551344567" expanded="true" signature="131:152" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -587,12 +471,12 @@
       <workItem from="1537518954118" duration="2470000" />
       <workItem from="1537521980109" duration="826000" />
       <workItem from="1537548939646" duration="205000" />
-      <workItem from="1537549314202" duration="2558000" />
+      <workItem from="1537549314202" duration="2757000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="26325000" />
+    <option name="totallyTimeSpent" value="26524000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -605,7 +489,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1280" height="726" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25686592" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -946,17 +829,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Blocks/OrganizationBlock/Models/Tests/OrganizationModelTests.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="7" column="8" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="8" />
-          <folding>
-            <marker date="1537551344567" expanded="true" signature="71:154" ph="{...}" />
-            <marker date="1537551344567" expanded="true" signature="131:152" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Blocks/ItemsBlock/Public/Startup.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="336">
@@ -970,41 +842,6 @@
             <marker date="1537551494569" expanded="true" signature="1138:1306" ph="{...}" />
             <marker date="1537551494569" expanded="true" signature="1170:1217" ph="{...}" />
             <marker date="1537551494569" expanded="true" signature="1225:1254" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Blocks/OrganizationBlock/Models/Tests/AddressModelTests.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="339">
-          <caret line="50" column="5" selection-start-line="50" selection-start-column="5" selection-end-line="50" selection-end-column="5" />
-          <folding>
-            <marker date="1537522417080" expanded="false" signature="6:36" ph="..." />
-            <marker date="1537522417080" expanded="true" signature="85:1296" ph="{...}" />
-            <marker date="1537522417080" expanded="true" signature="140:1294" ph="{...}" />
-            <marker date="1537522417080" expanded="true" signature="222:611" ph="{...}" />
-            <marker date="1537522417080" expanded="true" signature="311:482" ph="{...}" />
-            <marker date="1537522417080" expanded="true" signature="893:1288" ph="{...}" />
-            <marker date="1537522417080" expanded="true" signature="982:1146" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Blocks/ItemsBlock/Public/Controllers/ItemsController.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-28">
-          <caret line="10" column="11" selection-start-line="10" selection-start-column="11" selection-end-line="10" selection-end-column="11" />
-          <folding>
-            <marker date="1537386249055" expanded="true" signature="0:117" ph="/* ItemsController.cs ... */" />
-            <marker date="1537386249055" expanded="true" signature="125:329" ph="..." />
-            <marker date="1537386249055" expanded="true" signature="370:2234" ph="{...}" />
-            <marker date="1537386249055" expanded="true" signature="489:2232" ph="{...}" />
-            <marker date="1537386249055" expanded="true" signature="695:1143" ph="{...}" />
-            <marker date="1537386249055" expanded="true" signature="1254:1409" ph="{...}" />
-            <marker date="1537386249055" expanded="true" signature="1504:1643" ph="{...}" />
-            <marker date="1537386249055" expanded="true" signature="1697:1827" ph="{...}" />
-            <marker date="1537386249055" expanded="true" signature="1919:2136" ph="{...}" />
-            <marker date="1537386249055" expanded="true" signature="2167:2226" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -1066,18 +903,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Blocks/ItemsBlock/Components/Queries/ListAllItemsQuery.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <marker date="1536686825317" expanded="true" signature="0:119" ph="/* ListAllItemsQuery.cs ... */" />
-            <marker date="1536686825317" expanded="false" signature="126:235" ph="..." />
-            <marker date="1536686825317" expanded="true" signature="283:432" ph="{...}" />
-            <marker date="1536686825317" expanded="true" signature="341:430" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Blocks/ItemsBlock/Components/Queries/ItemsBlockBaseQuery.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -1086,6 +911,50 @@
             <marker date="1536686701993" expanded="false" signature="128:241" ph="..." />
             <marker date="1536686701993" expanded="true" signature="289:686" ph="{...}" />
             <marker date="1536686701993" expanded="true" signature="359:684" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Blocks/ItemsBlock/Public/Controllers/ItemsController.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-28">
+          <caret line="10" column="11" selection-start-line="10" selection-start-column="11" selection-end-line="10" selection-end-column="11" />
+          <folding>
+            <marker date="1537386249055" expanded="true" signature="0:117" ph="/* ItemsController.cs ... */" />
+            <marker date="1537386249055" expanded="true" signature="125:329" ph="..." />
+            <marker date="1537386249055" expanded="true" signature="370:2234" ph="{...}" />
+            <marker date="1537386249055" expanded="true" signature="489:2232" ph="{...}" />
+            <marker date="1537386249055" expanded="true" signature="695:1143" ph="{...}" />
+            <marker date="1537386249055" expanded="true" signature="1254:1409" ph="{...}" />
+            <marker date="1537386249055" expanded="true" signature="1504:1643" ph="{...}" />
+            <marker date="1537386249055" expanded="true" signature="1697:1827" ph="{...}" />
+            <marker date="1537386249055" expanded="true" signature="1919:2136" ph="{...}" />
+            <marker date="1537386249055" expanded="true" signature="2167:2226" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Blocks/OrganizationBlock/Models/Tests/OrganizationModelTests.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="7" column="8" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="8" />
+          <folding>
+            <marker date="1537551344567" expanded="true" signature="71:154" ph="{...}" />
+            <marker date="1537551344567" expanded="true" signature="131:152" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Blocks/ItemsBlock/Components/Queries/ListItemsFromNameQuery.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="15" column="38" selection-start-line="15" selection-start-column="38" selection-end-line="15" selection-end-column="38" />
+          <folding>
+            <marker date="1537551809972" expanded="true" signature="0:124" ph="/* ListItemsFromNameQuery.cs ... */" />
+            <marker date="1537551809972" expanded="true" signature="131:201" ph="..." />
+            <marker date="1537551809972" expanded="true" signature="249:599" ph="{...}" />
+            <marker date="1537551809972" expanded="true" signature="312:597" ph="{...}" />
+            <marker date="1537551809972" expanded="true" signature="394:466" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -1104,16 +973,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Blocks/ItemsBlock/Components/Queries/ListItemsFromNameQuery.cs">
+    <entry file="file://$PROJECT_DIR$/Blocks/ItemsBlock/Components/Queries/ListAllItemsQuery.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="15" column="38" selection-start-line="15" selection-start-column="38" selection-end-line="15" selection-end-column="38" />
+        <state>
           <folding>
-            <marker date="1537551809972" expanded="true" signature="0:124" ph="/* ListItemsFromNameQuery.cs ... */" />
-            <marker date="1537551809972" expanded="true" signature="131:201" ph="..." />
-            <marker date="1537551809972" expanded="true" signature="249:599" ph="{...}" />
-            <marker date="1537551809972" expanded="true" signature="312:597" ph="{...}" />
-            <marker date="1537551809972" expanded="true" signature="394:466" ph="{...}" />
+            <marker date="1536686825317" expanded="true" signature="0:119" ph="/* ListAllItemsQuery.cs ... */" />
+            <marker date="1536686825317" expanded="false" signature="126:235" ph="..." />
+            <marker date="1536686825317" expanded="true" signature="283:432" ph="{...}" />
+            <marker date="1536686825317" expanded="true" signature="341:430" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Blocks/OrganizationBlock/Models/Tests/AddressModelTests.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="339">
+          <caret line="50" column="5" selection-start-line="50" selection-start-column="5" selection-end-line="50" selection-end-column="5" />
+          <folding>
+            <marker date="1537522417080" expanded="false" signature="6:36" ph="..." />
+            <marker date="1537522417080" expanded="true" signature="85:1296" ph="{...}" />
+            <marker date="1537522417080" expanded="true" signature="140:1294" ph="{...}" />
+            <marker date="1537522417080" expanded="true" signature="222:611" ph="{...}" />
+            <marker date="1537522417080" expanded="true" signature="311:482" ph="{...}" />
+            <marker date="1537522417080" expanded="true" signature="893:1288" ph="{...}" />
+            <marker date="1537522417080" expanded="true" signature="982:1146" ph="{...}" />
           </folding>
         </state>
       </provider>
