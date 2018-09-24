@@ -9,21 +9,24 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Validations\ItemModel" />
-    <Folder Include="Validations\OrganizationModel" />
-    <Folder Include="Validations\OwnersModel" />
-  </ItemGroup>
-
-  <ItemGroup>
     <Compile Remove="Properties\**" />
+    <Compile Remove="Validations\ItemModel\**" />
+    <Compile Remove="Validations\OrganizationModel\**" />
+    <Compile Remove="Validations\OwnersModel\**" />
   </ItemGroup>
 
   <ItemGroup>
     <EmbeddedResource Remove="Properties\**" />
+    <EmbeddedResource Remove="Validations\ItemModel\**" />
+    <EmbeddedResource Remove="Validations\OrganizationModel\**" />
+    <EmbeddedResource Remove="Validations\OwnersModel\**" />
   </ItemGroup>
 
   <ItemGroup>
     <None Remove="Properties\**" />
+    <None Remove="Validations\ItemModel\**" />
+    <None Remove="Validations\OrganizationModel\**" />
+    <None Remove="Validations\OwnersModel\**" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />

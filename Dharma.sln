@@ -71,7 +71,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dharma.OrganizationBlock.Co
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dharma.OrganizationBlock.Components.Queries", "Blocks\OrganizationBlock\Components\Queries\Dharma.OrganizationBlock.Components.Queries.csproj", "{59E480E2-9840-403E-B13D-7F6AC107C4BE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dharma.OrganizationBlock.Tests", "Blocks\OrganizationBlock\Components\Tests\Dharma.OrganizationBlock.Tests.csproj", "{B330A90C-B120-4EC5-ABD7-53ADB75DE8F5}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dharma.OrganizationBlock.Components.Tests", "Blocks\OrganizationBlock\Components\Tests\Dharma.OrganizationBlock.Components.Tests.csproj", "{B330A90C-B120-4EC5-ABD7-53ADB75DE8F5}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dharma.OrganizationBlock.Models", "Blocks\OrganizationBlock\Models\Models\Dharma.OrganizationBlock.Models.csproj", "{141F36DD-B872-4BE7-9A0F-87E412981332}"
 EndProject
@@ -94,6 +94,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dharma.ItemsBlock", "Blocks\ItemsBlock\Public\Dharma.ItemsBlock.csproj", "{9CD3F8F4-726A-4D82-9906-7ACF602F5253}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dharma.OrganizationBlock.Models.Tests", "Blocks\OrganizationBlock\Models\Tests\Dharma.OrganizationBlock.Models.Tests.csproj", "{BD527762-A0D8-404F-8FF0-BBEA382ED2C6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dharma.OrganizationBlock.Interfaces", "Blocks\OrganizationBlock\Interfaces\Dharma.OrganizationBlock.Interfaces\Dharma.OrganizationBlock.Interfaces.csproj", "{A2EEA8D9-D27B-441C-8541-75163FD148DD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -185,6 +187,10 @@ Global
 		{BD527762-A0D8-404F-8FF0-BBEA382ED2C6}.Debug|x86.Build.0 = Debug|Any CPU
 		{BD527762-A0D8-404F-8FF0-BBEA382ED2C6}.Release|x86.ActiveCfg = Release|Any CPU
 		{BD527762-A0D8-404F-8FF0-BBEA382ED2C6}.Release|x86.Build.0 = Release|Any CPU
+		{A2EEA8D9-D27B-441C-8541-75163FD148DD}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{A2EEA8D9-D27B-441C-8541-75163FD148DD}.Debug|x86.Build.0 = Debug|Any CPU
+		{A2EEA8D9-D27B-441C-8541-75163FD148DD}.Release|x86.ActiveCfg = Release|Any CPU
+		{A2EEA8D9-D27B-441C-8541-75163FD148DD}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{63D7D4DA-FD14-484D-AA0B-E3ACA8408DCE} = {3EE496A1-5955-4918-9FCF-0AE81131B50C}
@@ -231,5 +237,6 @@ Global
 		{7D0BBD2B-91BA-465F-9DBA-B3D5F521B86C} = {8720E9BF-6173-43F6-933E-0B1969C3FBFF}
 		{9CD3F8F4-726A-4D82-9906-7ACF602F5253} = {73F7BCDE-732E-4095-9A14-65C44BA1ABC1}
 		{BD527762-A0D8-404F-8FF0-BBEA382ED2C6} = {4392B7B7-70EA-4AA2-8BD1-D517ED9B13B2}
+		{A2EEA8D9-D27B-441C-8541-75163FD148DD} = {20501014-CECE-4AE5-B062-9214DD392025}
 	EndGlobalSection
 EndGlobal

@@ -358,19 +358,35 @@
             </e>
             <e p="Tests" t="IncludeRecursive">
               <e p="bin" t="ExcludeRecursive" />
-              <e p="Class1.cs" t="Include" />
-              <e p="Dharma.OrganizationBlock.Tests.csproj" t="IncludeRecursive" />
+              <e p="Dharma.OrganizationBlock.Components.Tests.csproj" t="IncludeRecursive" />
               <e p="obj" t="ExcludeRecursive">
                 <e p="Debug" t="Include">
                   <e p="netcoreapp2.1" t="Include">
-                    <e p="Dharma.OrganizationBlock.Tests.AssemblyInfo.cs" t="Include" />
+                    <e p="Dharma.OrganizationBlock.Components.Tests.AssemblyInfo.cs" t="Include" />
+                    <e p="Dharma.OrganizationBlock.Components.Tests.Program.cs" t="Include" />
+                  </e>
+                </e>
+              </e>
+              <e p="OrganizationBlockQueriesTest.cs" t="Include" />
+              <e p="OrganizationFactory.cs" t="Include" />
+            </e>
+          </e>
+          <e p="Implementation" t="Include" />
+          <e p="Interfaces" t="Include">
+            <e p="Dharma.OrganizationBlock.Interfaces" t="IncludeRecursive">
+              <e p="bin" t="ExcludeRecursive" />
+              <e p="Dharma.OrganizationBlock.Interfaces.csproj" t="IncludeRecursive" />
+              <e p="IOrganizationBlockCommands.cs" t="Include" />
+              <e p="IOrganizationBlockQueries.cs" t="Include" />
+              <e p="obj" t="ExcludeRecursive">
+                <e p="Debug" t="Include">
+                  <e p="netcoreapp2.1" t="Include">
+                    <e p="Dharma.OrganizationBlock.Interfaces.AssemblyInfo.cs" t="Include" />
                   </e>
                 </e>
               </e>
             </e>
           </e>
-          <e p="Implementation" t="Include" />
-          <e p="Interfaces" t="Include" />
           <e p="Models" t="Include">
             <e p="Models" t="IncludeRecursive">
               <e p="AddressModel.cs" t="Include" />
@@ -416,6 +432,7 @@
                 <e p="Debug" t="Include">
                   <e p="netcoreapp2.1" t="Include">
                     <e p="Dharma.OrganizationBlock.Models.Tests.AssemblyInfo.cs" t="Include" />
+                    <e p="Dharma.OrganizationBlock.Models.Tests.Program.cs" t="Include" />
                   </e>
                 </e>
               </e>

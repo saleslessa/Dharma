@@ -22,3 +22,4 @@ using System.Runtime.CompilerServices;
 //[assembly: AssemblyDelaySign(false)]
 //[assembly: AssemblyKeyFile("")]
 [assembly: InternalsVisibleTo("Dharma.OrganizationBlock.Models.Tests")]
+[assembly: InternalsVisibleTo("Dharma.OrganizationBlock.Components.Tests")]

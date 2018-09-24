@@ -7,14 +7,14 @@ namespace Dharma.OrganizationBlock.Models.Validations.Organization
     {
         public override void Validate(OrganizationModel model)
         {
-            if (model.AddressModel == null)
+            if (model.Address == null)
             {
                 model.ValidationResult.Add("Address missing");
                 return;
             }
 
-            if (!model.AddressModel.IsValid())
-                model.AddressModel.ValidationResult.ListAll().ToList().ForEach(t => model.ValidationResult.Add(t));
+            if (!model.Address.IsValid())
+                model.Address.ValidationResult.ListAll().ToList().ForEach(t => model.ValidationResult.Add(t));
 
         }
     }

@@ -15,7 +15,7 @@ using Dharma.OrganizationBlock.Models.Validations.Organization;
 
 namespace Dharma.OrganizationBlock.Models
 {
-	internal class OrganizationModel : BaseModel
+	public class OrganizationModel : BaseModel
 	{
 		[Required]
 		public string Name { get; set; }
@@ -23,12 +23,13 @@ namespace Dharma.OrganizationBlock.Models
 		public string PhoneNumber { get; set; }
 	
 		[Required]
-		public AddressModel AddressModel { get; set; }
+		public AddressModel Address { get; set; }
 		
 		public List<ItemModel> ItemsNeeded { get; set; }
 		
 		public List<OwnerModel> Owners { get; set; }
 
+		public bool Active { get; set; }
 
 		public OrganizationModel()
 		{
@@ -38,11 +39,11 @@ namespace Dharma.OrganizationBlock.Models
 
 		protected override void Validate()
 		{
-			ItemsNeeded.ForEach(t => t.IsValid());
-			ItemsNeeded.ForEach(t => ValidationResult.Add(t.ValidationResult.Errors));
+			ItemsNeeded?.ForEach(t => t.IsValid());
+			ItemsNeeded?.ForEach(t => ValidationResult.Add(t.ValidationResult.Errors));
 			
-			Owners.ForEach(t => t.IsValid());
-			Owners.ForEach(t => ValidationResult.Add(t.ValidationResult.Errors));
+			Owners?.ForEach(t => t.IsValid());
+			Owners?.ForEach(t => ValidationResult.Add(t.ValidationResult.Errors));
 			
 			new OrganizationHasValidAddressValidation().Validate(this);
 			new OrganizationHasValidNameValidation().Validate(this);
