@@ -15,7 +15,7 @@ using Dharma.OrganizationBlock.Models.Validations.Organization;
 
 namespace Dharma.OrganizationBlock.Models
 {
-	public class OrganizationModel : BaseModel
+	internal class OrganizationModel : BaseModel
 	{
 		[Required]
 		public string Name { get; set; }

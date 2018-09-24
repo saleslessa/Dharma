@@ -30,4 +30,4 @@ using System.Runtime.CompilerServices;
 [assembly: InternalsVisibleTo("Dharma.LoggingBlock.Interfaces")]
 [assembly: InternalsVisibleTo("Dharma.LoggingBlock.Implementation")]
 [assembly: InternalsVisibleTo("Dharma.LoggingBlock")]
-[assembly: InternalsVisibleTo("Dharma.LoggingBlock.Component.Tests")]
+[assembly: InternalsVisibleTo("Dharma.LoggingBlock.Components.Tests")]

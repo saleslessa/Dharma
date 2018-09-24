@@ -27,7 +27,6 @@ namespace Dharma.OrganizationBlock.Components.Tests
             
             var model = OrganizationFactory.GetListOfValidOrganizations(5);
             
-
             // Act
             
 

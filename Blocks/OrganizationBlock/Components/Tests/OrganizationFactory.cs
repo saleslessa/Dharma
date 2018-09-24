@@ -3,7 +3,7 @@ using Dharma.OrganizationBlock.Models;
 
 namespace Dharma.OrganizationBlock.Components.Tests
 {
-    public static class OrganizationFactory
+    internal static class OrganizationFactory
     {
         public static List<OrganizationModel> GetListOfValidOrganizations(uint amount)
         {

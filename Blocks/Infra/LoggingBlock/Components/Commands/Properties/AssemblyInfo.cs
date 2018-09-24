@@ -24,5 +24,5 @@ using System.Runtime.CompilerServices;
 
 //[assembly: AssemblyDelaySign(false)]
 //[assembly: AssemblyKeyFile("")]
-[assembly: InternalsVisibleTo("Dharma.LoggingBlock.Component.Tests")]
+[assembly: InternalsVisibleTo("Dharma.LoggingBlock.Components.Tests")]
 [assembly: InternalsVisibleTo("Dharma.LoggingBlock.Implementation")]

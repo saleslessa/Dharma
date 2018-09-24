@@ -2,7 +2,8 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp2.1</TargetFramework>
-    <RootNamespace>Dharma.Dharma.LoggingBlock.Component.Tests</RootNamespace>
+    <RootNamespace>Dharma.LoggingBlock.Components.Tests</RootNamespace>
+    <AssemblyName>Dharma.LoggingBlock.Components.Tests</AssemblyName>
   </PropertyGroup>
 
   <ItemGroup>

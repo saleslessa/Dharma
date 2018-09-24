@@ -4,11 +4,12 @@
 //       Sales Alencar <lopesdealencar@gmail.com>
 //
 // Copyright (c) 2018 MIT
+
 using Dharma.LoggingBlock.Components.Commands;
 using Dharma.LoggingBlock.Models;
 using NUnit.Framework;
 
-namespace Dharma.LoggingBlock.Component.Tests
+namespace Dharma.LoggingBlock.Components.Tests
 {
 	[TestFixture]
 	public class CommandsTests

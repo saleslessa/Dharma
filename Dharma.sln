@@ -29,7 +29,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dharma.LoggingBlock.Compone
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dharma.LoggingBlock.Components.Queries", "Blocks\Infra\LoggingBlock\Components\Queries\Dharma.LoggingBlock.Components.Queries.csproj", "{BFBCEB71-2F99-406F-9C76-150C2C2A6454}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dharma.LoggingBlock.Component.Tests", "Blocks\Infra\LoggingBlock\Components\Tests\Dharma.LoggingBlock.Component.Tests.csproj", "{F0B3F2F2-011F-4EB1-841D-001701F87CAC}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dharma.LoggingBlock.Components.Tests", "Blocks\Infra\LoggingBlock\Components\Tests\Dharma.LoggingBlock.Components.Tests.csproj", "{F0B3F2F2-011F-4EB1-841D-001701F87CAC}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dharma.LoggingBlock", "Blocks\Infra\LoggingBlock\Public\Dharma.LoggingBlock.csproj", "{C3E9FB25-B27A-4BB0-8F48-2F9C356B99F4}"
 EndProject
