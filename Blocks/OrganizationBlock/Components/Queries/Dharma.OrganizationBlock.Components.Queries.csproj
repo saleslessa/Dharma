@@ -4,4 +4,9 @@
     <TargetFramework>netcoreapp2.1</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Infra\Core\Dharma.Core.csproj" />
+    <ProjectReference Include="..\..\Models\Models\Dharma.OrganizationBlock.Models.csproj" />
+  </ItemGroup>
+
 </Project>

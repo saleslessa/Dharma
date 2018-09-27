@@ -5,7 +5,7 @@ namespace Dharma.OrganizationBlock.Components.Tests
 {
     internal static class OrganizationFactory
     {
-        public static List<OrganizationModel> GetListOfValidOrganizations(uint amount)
+        public static IEnumerable<OrganizationModel> GetListOfValidOrganizations(uint amount)
         {
             var result = new List<OrganizationModel>();
 

@@ -25,6 +25,8 @@ namespace Dharma.OrganizationBlock.Models
 		[Required]
 		public AddressModel Address { get; set; }
 		
+		public List<string> Categories { get; set; }
+		
 		public List<ItemModel> ItemsNeeded { get; set; }
 		
 		public List<OwnerModel> Owners { get; set; }
@@ -35,6 +37,7 @@ namespace Dharma.OrganizationBlock.Models
 		{
 			ItemsNeeded = new List<ItemModel>();
 			Owners = new List<OwnerModel>();
+			Categories = new List<string>();
 		}
 
 		protected override void Validate()

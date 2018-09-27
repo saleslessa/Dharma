@@ -15,6 +15,7 @@
   <ItemGroup>
     <ProjectReference Include="..\..\Interfaces\Dharma.OrganizationBlock.Interfaces\Dharma.OrganizationBlock.Interfaces.csproj" />
     <ProjectReference Include="..\..\Models\Models\Dharma.OrganizationBlock.Models.csproj" />
+    <ProjectReference Include="..\Queries\Dharma.OrganizationBlock.Components.Queries.csproj" />
   </ItemGroup>
 
 </Project>
