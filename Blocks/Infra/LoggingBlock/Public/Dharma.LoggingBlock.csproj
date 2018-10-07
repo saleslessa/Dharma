@@ -6,12 +6,12 @@
   </PropertyGroup>
 
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <DocumentationMarkdown>'..\..\..\Readme.md</DocumentationMarkdown>
+    <DocumentationMarkdown>..\..\..\Readme.md</DocumentationMarkdown>
     <DocumentationFile>bin\Debug\netcoreapp2.1\LoggingBlock.xml</DocumentationFile>
     <WarningLevel>2</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <DocumentationMarkdown>'..\..\..\Readme.md</DocumentationMarkdown>
+    <DocumentationMarkdown>..\..\..\Readme.md</DocumentationMarkdown>
     <DocumentationFile>bin\Release\netcoreapp2.1\LoggingBlock.xml</DocumentationFile>
   </PropertyGroup>
   <ItemGroup>
@@ -28,9 +28,5 @@
   <ItemGroup>
     <ProjectReference Include="..\Implementation\Dharma.LoggingBlock.Implementation.csproj" />
     <ProjectReference Include="..\Models\Logging.Models\Dharma.LoggingBlock.Models.csproj" />
-  </ItemGroup>
-  <ItemGroup>
-    <Compile Remove="Extensions\LoggingExtension.cs" />
-    <Compile Remove="Controllers\ValuesController.cs" />
   </ItemGroup>
 </Project>

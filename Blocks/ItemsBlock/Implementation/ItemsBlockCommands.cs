@@ -31,7 +31,7 @@ namespace Dharma.ItemsBlock.Implementation
                 }
                 else
                 {
-                    new AddItemModelCommand(model).Run();                    
+                    new ItemsBlockBaseCommand(model).Add();                    
                 }
 
                 return model;
@@ -52,7 +52,7 @@ namespace Dharma.ItemsBlock.Implementation
                 }
                 else
                 {
-                    new UpdateItemModelCommand(model).Run();
+                    new ItemsBlockBaseCommand(model).Update();
                 }
 
                 return model;

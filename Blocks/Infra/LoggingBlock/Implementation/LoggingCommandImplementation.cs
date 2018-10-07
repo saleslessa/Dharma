@@ -24,8 +24,8 @@ namespace Dharma.LoggingBlock.Implementation
 				if (!model.IsValid()) 
 					return model;
 
-				var command = new AddLoggingCommand(model);
-				command.Run();
+				new LoggingBlockBaseCommand(model).Add();
+				
 				return model;
 			}
 			catch (Exception e)

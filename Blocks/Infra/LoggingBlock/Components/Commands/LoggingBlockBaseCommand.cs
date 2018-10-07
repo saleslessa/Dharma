@@ -12,7 +12,7 @@ using Dharma.LoggingBlock.Models;
 
 namespace Dharma.LoggingBlock.Components.Commands
 {
-	internal abstract class LoggingBlockBaseCommand : BaseCommand<LoggingBlockModel>
+	internal class LoggingBlockBaseCommand : BaseCommand<LoggingBlockModel>
 	{
 		public LoggingBlockBaseCommand(LoggingBlockModel model) : base(model)
 		{

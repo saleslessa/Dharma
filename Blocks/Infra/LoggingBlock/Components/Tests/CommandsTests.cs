@@ -19,10 +19,10 @@ namespace Dharma.LoggingBlock.Components.Tests
 		{
 			// Arrange
 			var model = new LoggingBlockModel("TestBlock", "Some message", LoggingBlockType.Error);
-			var command = new AddLoggingCommand(model);
+			var command = new LoggingBlockBaseCommand(model);
 
 			// Act
-			command.Run();
+			command.Add();
 
 			// Assert
 			Assert.True(command.SuccessfulOperation);

@@ -7,7 +7,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dharma.Core", "Blocks\Infra
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "LoggingBlock", "LoggingBlock", "{7F420E46-8317-4A0C-AAF1-0F0FD13A210D}"
 	ProjectSection(SolutionItems) = preProject
-		Blocks\Infra\LoggingBlock\DockerFile = Blocks\Infra\LoggingBlock\DockerFile
 		Blocks\Infra\LoggingBlock\Readme.md = Blocks\Infra\LoggingBlock\Readme.md
 	EndProjectSection
 EndProject
@@ -38,6 +37,10 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dharma.LoggingBlock.Interfaces", "Blocks\Infra\LoggingBlock\Interfaces\Dharma.LoggingBlock.Interfaces.csproj", "{56982044-5FDE-42AF-964D-BC3744C8DC15}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Blocks", "Blocks", "{3D29A914-C5E2-4708-94D5-E93E52957CAB}"
+ProjectSection(SolutionItems) = preProject
+	Blocks\Dockerfile = Blocks\Dockerfile
+	Blocks\.dockerignore = Blocks\.dockerignore
+EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ItemsBlock", "ItemsBlock", "{BFE9455C-FCE9-4E06-99F4-998FDC9B34F8}"
 EndProject

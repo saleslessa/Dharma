@@ -9,4 +9,9 @@
   <ItemGroup>
     <Compile Remove="Class1.cs" />
   </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Infra\Core\Dharma.Core.csproj" />
+    <ProjectReference Include="..\..\Models\Models\Dharma.OrganizationBlock.Models.csproj" />
+  </ItemGroup>
 </Project>

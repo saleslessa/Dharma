@@ -12,7 +12,7 @@ using Dharma.ItemsBlock.Models;
 
 namespace Dharma.ItemsBlock.Components.Commands
 {
-	internal abstract class ItemsBlockBaseCommand : BaseCommand<ItemModel>
+	internal class ItemsBlockBaseCommand : BaseCommand<ItemModel>
 	{
 		public ItemsBlockBaseCommand(ItemModel model) : base(model)
 		{
@@ -27,6 +27,5 @@ namespace Dharma.ItemsBlock.Components.Commands
 		protected override string user => ItemsBlockCommands.User;
 
 		protected override string pwd => ItemsBlockCommands.Pwd;
-
 	}
 }
