@@ -37,10 +37,10 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dharma.LoggingBlock.Interfaces", "Blocks\Infra\LoggingBlock\Interfaces\Dharma.LoggingBlock.Interfaces.csproj", "{56982044-5FDE-42AF-964D-BC3744C8DC15}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Blocks", "Blocks", "{3D29A914-C5E2-4708-94D5-E93E52957CAB}"
-ProjectSection(SolutionItems) = preProject
-	Blocks\Dockerfile = Blocks\Dockerfile
-	Blocks\.dockerignore = Blocks\.dockerignore
-EndProjectSection
+	ProjectSection(SolutionItems) = preProject
+		Blocks\Dockerfile = Blocks\Dockerfile
+		Blocks\.dockerignore = Blocks\.dockerignore
+	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ItemsBlock", "ItemsBlock", "{BFE9455C-FCE9-4E06-99F4-998FDC9B34F8}"
 EndProject
@@ -99,6 +99,10 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dharma.OrganizationBlock.Models.Tests", "Blocks\OrganizationBlock\Models\Tests\Dharma.OrganizationBlock.Models.Tests.csproj", "{BD527762-A0D8-404F-8FF0-BBEA382ED2C6}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dharma.OrganizationBlock.Interfaces", "Blocks\OrganizationBlock\Interfaces\Dharma.OrganizationBlock.Interfaces\Dharma.OrganizationBlock.Interfaces.csproj", "{A2EEA8D9-D27B-441C-8541-75163FD148DD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WEB", "WEB", "{3C3686E4-78D2-48F7-9391-A65BF2B2BFFF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dharma.Web", "WEB\Dharma.Web\Dharma.Web.csproj", "{863DED4B-9E0C-453D-AAD7-C95D79EBD601}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -194,6 +198,10 @@ Global
 		{A2EEA8D9-D27B-441C-8541-75163FD148DD}.Debug|x86.Build.0 = Debug|Any CPU
 		{A2EEA8D9-D27B-441C-8541-75163FD148DD}.Release|x86.ActiveCfg = Release|Any CPU
 		{A2EEA8D9-D27B-441C-8541-75163FD148DD}.Release|x86.Build.0 = Release|Any CPU
+		{863DED4B-9E0C-453D-AAD7-C95D79EBD601}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{863DED4B-9E0C-453D-AAD7-C95D79EBD601}.Debug|x86.Build.0 = Debug|Any CPU
+		{863DED4B-9E0C-453D-AAD7-C95D79EBD601}.Release|x86.ActiveCfg = Release|Any CPU
+		{863DED4B-9E0C-453D-AAD7-C95D79EBD601}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{63D7D4DA-FD14-484D-AA0B-E3ACA8408DCE} = {3EE496A1-5955-4918-9FCF-0AE81131B50C}
@@ -241,5 +249,6 @@ Global
 		{9CD3F8F4-726A-4D82-9906-7ACF602F5253} = {73F7BCDE-732E-4095-9A14-65C44BA1ABC1}
 		{BD527762-A0D8-404F-8FF0-BBEA382ED2C6} = {4392B7B7-70EA-4AA2-8BD1-D517ED9B13B2}
 		{A2EEA8D9-D27B-441C-8541-75163FD148DD} = {20501014-CECE-4AE5-B062-9214DD392025}
+		{863DED4B-9E0C-453D-AAD7-C95D79EBD601} = {3C3686E4-78D2-48F7-9391-A65BF2B2BFFF}
 	EndGlobalSection
 EndGlobal

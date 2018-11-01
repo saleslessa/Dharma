@@ -1,0 +1,17 @@
+<h1>Items</h1>
+<table class='table' *ngIf="itemsModel">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Type</th>
+      <th>Amount</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let item of itemsModel">
+      <td>{{ item.Name }}</td>
+      <td>{{ item.Type }}</td>
+      <td>{{ item.Amount }}</td>
+    </tr>
+  </tbody>
+</table>

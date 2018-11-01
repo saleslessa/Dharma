@@ -1,0 +1,24 @@
+<h1>Logs</h1>
+<input [(ngModel)]="blockName" />
+<button (click)="findLogs()">Increment</button>
+
+<p *ngIf="!logs"><em>Loading...</em></p>
+
+<table class='table' *ngIf="logs">
+  <thead>
+    <tr>
+      <th>Id</th>
+      <th>Type</th>
+      <th>Block</th>
+      <th>Message</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let log of logs">
+      <td>{{ log.Id }}</td>
+      <td>{{ log.Type }}</td>
+      <td>{{ log.BlockOrigin }}</td>
+      <td>{{ log.Message }}</td>
+    </tr>
+  </tbody>
+</table>

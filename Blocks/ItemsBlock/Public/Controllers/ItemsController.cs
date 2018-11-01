@@ -51,7 +51,7 @@ namespace Dharma.ItemsBlock.Controllers
         }
 
         [HttpGet]
-        public IActionResult Get()
+        public virtual IActionResult Get()
         {
             var models = _queries.ListAllItems();
             return GenericGet(models.Select(t => t.Map()));

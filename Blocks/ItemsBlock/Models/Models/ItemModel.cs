@@ -24,8 +24,6 @@ namespace Dharma.ItemsBlock.Models
 
 		public IEnumerable<string> Categories { get; set; }
 
-		public bool Active { get; set; }
-
 		public ItemModel()
 		{
 			Active = true;
