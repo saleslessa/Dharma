@@ -8,6 +8,7 @@
   <thead>
     <tr>
       <th>Id</th>
+      <th>Time</th>
       <th>Type</th>
       <th>Block</th>
       <th>Message</th>
@@ -15,10 +16,11 @@
   </thead>
   <tbody>
     <tr *ngFor="let log of logs">
-      <td>{{ log.Id }}</td>
-      <td>{{ log.Type }}</td>
-      <td>{{ log.BlockOrigin }}</td>
-      <td>{{ log.Message }}</td>
+      <td>{{ log.id }}</td>
+      <td>{{ log.timeStamp }}</td>
+      <td>{{ log.type }}</td>
+      <td>{{ log.blockOrigin }}</td>
+      <td>{{ log.message }}</td>
     </tr>
   </tbody>
 </table>

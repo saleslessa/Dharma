@@ -11,14 +11,12 @@ using System.Collections.Generic;
 using System.Linq;
 using Dharma.Core;
 using Dharma.ItemsBlock.Components.Queries;
-using Dharma.ItemsBlock.Implementation.Properties;
 using Dharma.ItemsBlock.Interfaces;
 using Dharma.ItemsBlock.Models;
-using NLog;
 
 namespace Dharma.ItemsBlock.Implementation
 {
-    internal class ItemsBlockQueries : IItemsBlockQueries
+	internal class ItemsBlockQueries : IItemsBlockQueries
     {
         public IEnumerable<ItemModel> ListAllItems()
         {

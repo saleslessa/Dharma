@@ -28,6 +28,7 @@
   <ItemGroup>
     <ProjectReference Include="..\..\Blocks\Infra\LoggingBlock\Public\Dharma.LoggingBlock.csproj" />
     <ProjectReference Include="..\..\Blocks\ItemsBlock\Public\Dharma.ItemsBlock.csproj" />
+    <ProjectReference Include="..\..\Blocks\OrganizationBlock\Public\Dharma.OrganizationBlock.csproj" />
   </ItemGroup>
 
   <Target Name="DebugEnsureNodeEnv" BeforeTargets="Build" Condition=" '$(Configuration)' == 'Debug' And !Exists('$(SpaRoot)node_modules') ">
@@ -50,7 +51,7 @@
     <ItemGroup>
       <DistFiles Include="$(SpaRoot)dist\**; $(SpaRoot)dist-server\**" />
       <DistFiles Include="$(SpaRoot)node_modules\**" Condition="'$(BuildServerSideRenderer)' == 'true'" />
-      <ResolvedFileToPublish Include="@(DistFiles->'%(FullPath)')" Exclude="@(ResolvedFileToPublish)">
+      <ResolvedFileToPublish Include="@(DistFiles-&gt;'%(FullPath)')" Exclude="@(ResolvedFileToPublish)">
         <RelativePath>%(DistFiles.Identity)</RelativePath>
         <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       </ResolvedFileToPublish>

@@ -1,13 +1,11 @@
 using System;
-using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
-using System.Text;
 using Dharma.OrganizationBlock.Models;
 
 namespace Dharma.OrganizationBlock.Components.Queries
 {
-    internal class ListAllOrganizationFromCategoryQuery : OrganizationBaseQuery
+	internal class ListAllOrganizationFromCategoryQuery : OrganizationBaseQuery
     {
         private readonly string _category;
 

@@ -5,6 +5,7 @@
 //
 // Copyright (c) 2018 MIT
 
+using System;
 using Dharma.Core;
 
 namespace Dharma.LoggingBlock.ViewModels
@@ -28,6 +29,8 @@ namespace Dharma.LoggingBlock.ViewModels
 		public string Type { get; set; }
 
 		public string BlockOrigin { get; set; }
+		
+		public DateTime TimeStamp { get; set; }
 
 		protected override ValidationResult ValidationResult { get; set; }
 	}

@@ -6,7 +6,7 @@ import { HttpClient } from '@angular/common/http';
   templateUrl: './logs.component.html'
 })
 export class LogsComponent {
-  private httpClient : HttpClient;
+  private httpClient: HttpClient;
   private apiUrl: string;
 
   public logs: Log[];
@@ -22,17 +22,18 @@ export class LogsComponent {
     if (this.blockName != null) {
         this.httpClient.get<Log[]>(this.apiUrl + 'api/Logging/' + this.blockName).subscribe(result => {
         this.logs = result;
-      }, error => alert("    ERROR: " + error));
+      }, error => alert('    ERROR: ' + error));
     } else {
-      alert("invalid block name");
+      alert('invalid block name');
     }
   }
 
 }
 
 interface Log {
-  Id: string;
-  Message: string;
-  Type: string;
-  BlockOrigin: string;
+  id: string;
+  message: string;
+  timeStamp: Date;
+  type: string;
+  blockOrigin: string;
 }

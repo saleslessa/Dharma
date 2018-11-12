@@ -87,14 +87,14 @@ namespace Dharma.OrganizationBlock.Models.Tests
             {
                 ItemsNeeded = new List<ItemModel>(),
                 Owners = new List<OwnerModel>(){ new OwnerModel() { Name = "a", Phone = "b", DocumentIdentification = "c"}},
-                Address = new AddressModel(){Country = "a", Street = "b", AdditionalInfo = "v", StateProvince = "c", StreetNumber = 2},
+                Address = new AddressModel(){Street = "b", AdditionalInfo = "v", StreetNumber = 2},
                 Name = "q", PhoneNumber = "123"
             };
             var modelWithNullItem = new OrganizationModel()
             {
                 ItemsNeeded = null,
                 Owners = new List<OwnerModel>(){ new OwnerModel() { Name = "a", Phone = "b", DocumentIdentification = "c"}},
-                Address = new AddressModel(){Country = "a", Street = "b", AdditionalInfo = "v", StateProvince = "c", StreetNumber = 2},
+                Address = new AddressModel(){Street = "b", AdditionalInfo = "v", StreetNumber = 2},
                 Name = "q", PhoneNumber = "123"
             };
             

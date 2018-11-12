@@ -1,0 +1,82 @@
+<h1>Looking dots in the map!</h1>
+
+<div class="col-md-6">
+  <table>
+      <tr>
+        <th>Latitude</th>
+        <td><input [(ngModel)]="lat" /></td>
+      </tr>
+      <tr>
+        <th>Longitude</th>
+        <td><input [(ngModel)]="lng" /></td>
+      </tr>
+      <tr>
+        <th>Radius (KM)</th>
+        <td><input [(ngModel)]="radius"/></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td><button (click)="findLocation()">Look Again</button></td>
+      </tr>
+  </table>
+</div>
+<div class="col-md-6">
+  <table class="table" *ngIf="markers">
+    <thead>
+      <tr>
+        <th>Label</th>
+        <th>Lat</th>
+        <th>Lng</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let m of markers">
+        <td>{{m.label}}</td>
+        <td>{{ m.lat}}</td>
+        <td>{{m.lng}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<br><br>
+<div class="col-md-12" style="border: 1px solid black">
+    <agm-map
+    [latitude]="lat"
+    [longitude]="lng"
+    [zoom]="zoom"
+    [disableDefaultUI]="false"
+    [zoomControl]="false">
+  
+    <agm-marker 
+        *ngFor="let m of markers; let i = index"
+        (markerClick)="clickedMarker(i)"
+        [latitude]="m.lat"
+        [longitude]="m.lng"
+        [markerDraggable]="false">
+        
+      <agm-info-window *ngIf="selectedItem">
+        <p>
+          <strong>{{ selectedItem.label }}</strong><br>
+          <strong>Phone:</strong> {{ selectedItem.phoneNumber }}
+        </p>
+        <div *ngIf="selectedItem.categories">
+          <strong>Need:</strong>
+          <table>
+            <tr *ngFor="let item of selectedItem.categories">
+              <td> - {{ item }}</td>
+            </tr>
+          </table>
+        </div>
+      </agm-info-window>
+      
+    </agm-marker>
+   
+    <agm-circle [latitude]="lat" [longitude]="lng" *ngIf="radius"
+      [radius]="radius * 1000"
+      [fillColor]="'blue'"
+      [circleDraggable]="false"
+      [editable]="true">
+  </agm-circle>
+
+  </agm-map>
+</div>

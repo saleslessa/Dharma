@@ -419,10 +419,7 @@
                 <e p="AssemblyInfo.cs" t="Include" />
               </e>
               <e p="Validations" t="Include">
-                <e p="Address" t="Include">
-                  <e p="AddressHasValidCountryValidation.cs" t="Include" />
-                  <e p="AddressHasValidStateProvinceValidation.cs" t="Include" />
-                </e>
+                <e p="Address" t="Include" />
                 <e p="Item" t="Include">
                   <e p="ItemHasValidNameValidation.cs" t="Include" />
                 </e>
@@ -475,6 +472,7 @@
             </e>
             <e p="karma.conf.js" t="Include" />
             <e p="node_modules" t="ExcludeRecursive">
+              <e p="@agm/Core" t="IncludeRecursive" />
               <e p="@angular/animations" t="IncludeRecursive" />
               <e p="@angular/cli" t="IncludeRecursive" />
               <e p="@angular/common" t="IncludeRecursive" />
@@ -504,6 +502,7 @@
               <e p="karma-coverage-istanbul-reporter" t="IncludeRecursive" />
               <e p="karma-jasmine" t="IncludeRecursive" />
               <e p="karma-jasmine-html-reporter" t="IncludeRecursive" />
+              <e p="node-sass" t="IncludeRecursive" />
               <e p="protractor" t="IncludeRecursive" />
               <e p="rxjs" t="IncludeRecursive" />
               <e p="ts-node" t="IncludeRecursive" />
@@ -569,6 +568,12 @@
                 <e p="logs" t="Include">
                   <e p="logs.component.html" t="Include" />
                   <e p="logs.component.ts" t="Include" />
+                </e>
+                <e p="map-module" t="Include">
+                  <e p="map.component.css" t="Include" />
+                  <e p="map.component.html" t="Include" />
+                  <e p="map.component.ts" t="Include" />
+                  <e p="map.module.ts" t="Include" />
                 </e>
                 <e p="nav-menu" t="Include">
                   <e p="nav-menu.component.css" t="Include" />

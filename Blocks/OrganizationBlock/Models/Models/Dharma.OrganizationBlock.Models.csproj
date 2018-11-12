@@ -13,6 +13,8 @@
     <Compile Remove="Validations\ItemModel\**" />
     <Compile Remove="Validations\OrganizationModel\**" />
     <Compile Remove="Validations\OwnersModel\**" />
+    <Compile Remove="Validations\Address\AddressHasValidCountryValidation.cs" />
+    <Compile Remove="Validations\Address\AddressHasValidStateProvinceValidation.cs" />
   </ItemGroup>
 
   <ItemGroup>
@@ -30,5 +32,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Validations\Address" />
   </ItemGroup>
 </Project>

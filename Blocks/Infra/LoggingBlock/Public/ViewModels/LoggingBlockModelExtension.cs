@@ -18,7 +18,8 @@ namespace Dharma.LoggingBlock.ViewModels
 				BlockOrigin = model.BlockOrigin,
 				Id = model.Id,
 				Message = model.Message,
-				Type = Enum.GetName(typeof(LoggingBlockType), model.Type)
+				Type = Enum.GetName(typeof(LoggingBlockType), model.Type),
+				TimeStamp = model.TimeStamp
 			};
 			
 			result.SetValidationResult(model.ValidationResult);
@@ -35,7 +36,8 @@ namespace Dharma.LoggingBlock.ViewModels
 				Message = model.Message,
 				Type = model.Type != null
 					? (LoggingBlockType) Enum.Parse(typeof(LoggingBlockType), model.Type)
-					: LoggingBlockType.Error
+					: LoggingBlockType.Error,
+				TimeStamp = model.TimeStamp
 			};
 		}
 	}

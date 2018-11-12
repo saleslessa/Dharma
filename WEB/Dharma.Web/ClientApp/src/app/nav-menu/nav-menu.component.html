@@ -27,6 +27,11 @@
                   <span class='glyphicon glyphicon-alert'></span> Logs
                 </a>
               </li>
+              <li [routerLinkActive]='["link-active"]'>
+                <a [routerLink]='["/map"]' (click)='collapse()'>
+                  <span class='glyphicon glyphicon-map-marker'></span> Map
+                </a>
+              </li>
                 <li [routerLinkActive]='["link-active"]'>
                     <a [routerLink]='["/counter"]' (click)='collapse()'>
                         <span class='glyphicon glyphicon-education'></span> Counter

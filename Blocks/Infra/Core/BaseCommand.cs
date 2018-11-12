@@ -47,6 +47,10 @@ namespace Dharma.Core
 		/// </summary>
 		public void Add()
 		{
+            if (string.IsNullOrEmpty(_model.Id))
+            {
+              _model.Id = Guid.NewGuid().ToString();
+            }
 			GetConnection().InsertOne(_model);
 		}
 

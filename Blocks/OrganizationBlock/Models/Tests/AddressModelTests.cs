@@ -13,8 +13,6 @@ namespace Dharma.OrganizationBlock.Models.Tests
             var model = new AddressModel()
             {
                 Street = "Test one",
-                StateProvince = "something",
-                Country = "LiberLand",
                 StreetNumber = 123
             };
 
@@ -37,8 +35,6 @@ namespace Dharma.OrganizationBlock.Models.Tests
             var model = new AddressModel()
             {
                 Street = "some street",
-                StateProvince = state,
-                Country = country,
                 StreetNumber = 123
             };
             

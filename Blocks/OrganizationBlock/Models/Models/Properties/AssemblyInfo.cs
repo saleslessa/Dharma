@@ -25,3 +25,6 @@ using System.Runtime.CompilerServices;
 [assembly: InternalsVisibleTo("Dharma.OrganizationBlock.Components.Tests")]
 [assembly: InternalsVisibleTo("Dharma.OrganizationBlock.Components.Queries")]
 [assembly: InternalsVisibleTo("Dharma.OrganizationBlock.Components.Commands")]
+[assembly: InternalsVisibleTo("Dharma.OrganizationBlock.Interfaces")]
+[assembly: InternalsVisibleTo("Dharma.OrganizationBlock.Implementation")]
+[assembly: InternalsVisibleTo("Dharma.OrganizationBlock")]

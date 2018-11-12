@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Interfaces\Dharma.OrganizationBlock.Interfaces\Dharma.OrganizationBlock.Interfaces.csproj" />
+    <ProjectReference Include="..\Models\Models\Dharma.OrganizationBlock.Models.csproj" />
+    <ProjectReference Include="..\Components\Commands\Dharma.OrganizationBlock.Components.Commands.csproj" />
+    <ProjectReference Include="..\Components\Queries\Dharma.OrganizationBlock.Components.Queries.csproj" />
+  </ItemGroup>
+</Project>

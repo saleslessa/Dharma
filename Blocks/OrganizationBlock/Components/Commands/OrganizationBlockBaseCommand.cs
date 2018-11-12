@@ -5,7 +5,7 @@ using Dharma.OrganizationBlock.Models;
 
 namespace Dharma.OrganizationBlock.Components.Commands
 {
-    internal abstract class OrganizationBaseCommand: BaseCommand<OrganizationModel>
+    internal class OrganizationBlockBaseCommand: BaseCommand<OrganizationModel>
     {
         protected override string server => Resources.Server;
 
@@ -17,7 +17,7 @@ namespace Dharma.OrganizationBlock.Components.Commands
 
         protected override string pwd => Resources.Pwd;
 
-        protected OrganizationBaseCommand(OrganizationModel model) : base(model)
+        public OrganizationBlockBaseCommand(OrganizationModel model) : base(model)
         {
         }
     }

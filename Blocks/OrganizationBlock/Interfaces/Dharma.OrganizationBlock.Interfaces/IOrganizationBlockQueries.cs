@@ -1,10 +1,14 @@
-using System.Runtime.CompilerServices;
+using System.Collections.Generic;
+using Dharma.OrganizationBlock.Models;
 
-[assembly: InternalsVisibleTo("Dharma.OrganizationBlock.Components.Tests")]
 namespace Dharma.OrganizationBlock.Interfaces
 {
-    internal interface IOrganizationBlockQueries
+	internal interface IOrganizationBlockQueries
     {
-        
+		IEnumerable<OrganizationModel> ListAll();
+
+		IEnumerable<OrganizationModel> ListAllFromArea(double latitude, double longitude, int radius);
+
+		IEnumerable<OrganizationModel> Get(string Id);
     }
 }

@@ -17,10 +17,8 @@ namespace Dharma.OrganizationBlock.Components.Tests
                     Active = true,
                     Address = new AddressModel()
                     {
-                        Country = "BR",
                         Street = $"Some street {i}",
                         AdditionalInfo = $"Some additional info {i}",
-                        StateProvince = $"Some state {i}",
                         StreetNumber = i
                     },
                     Owners = new List<OwnerModel>()

@@ -15,6 +15,7 @@
     <Compile Remove="Message.cs" />
     <Compile Remove="BaseCommandDecorator.cs" />
     <Compile Remove="Repository.cs" />
+    <Compile Remove="LocationModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Autofac" Version="4.8.1" />

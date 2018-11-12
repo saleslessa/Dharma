@@ -1,6 +1,4 @@
-﻿using System;
-using Dharma.Core;
-using Dharma.OrganizationBlock.Models.Validations.Address;
+﻿using Dharma.Core;
 
 namespace Dharma.OrganizationBlock.Models
 {
@@ -12,14 +10,12 @@ namespace Dharma.OrganizationBlock.Models
         
         public string AdditionalInfo { get; set; } 
         
-        public string StateProvince { get; set; }
+        public double Latitude { get; set; }
         
-        public string Country { get; set; }
+        public double Longitude { get; set; }
 
         protected override void Validate()
         {
-            new AddressHasValidStateProvinceValidation().Validate(this);
-            new AddressHasValidCountryValidation().Validate(this);
         }
     }
 }

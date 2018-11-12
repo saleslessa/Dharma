@@ -1,10 +1,14 @@
-using System.Runtime.CompilerServices;
+using Dharma.Core;
+using Dharma.OrganizationBlock.Models;
 
-[assembly: InternalsVisibleTo("Dharma.OrganizationBlock.Components.Tests")]
 namespace Dharma.OrganizationBlock.Interfaces
 {
-    internal interface IOrganizationBlockCommands
+	internal interface IOrganizationBlockCommands
     {
-        
+		OrganizationModel Add(OrganizationModel model);
+
+		OrganizationModel Update(OrganizationModel model);
+
+		ValidationResult Remove(string Id);
     }
 }

@@ -4,7 +4,8 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace Dharma.Web.Controllers
 {
-	[Route("api/Logging")]
+	[Route("api/[controller]")]
+	[ApiController]
 	public class LoggingController : LoggingBlock.Controllers.LoggingController
 	{
 

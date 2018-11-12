@@ -20,6 +20,7 @@ namespace Dharma.Core
         /// </summary>
         /// <value>The identifier.</value>
         [Required]
+        [Key]
         public string Id { get; set; }
         
         /// <summary>

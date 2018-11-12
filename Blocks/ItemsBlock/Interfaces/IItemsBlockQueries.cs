@@ -5,7 +5,6 @@
 //
 // Copyright (c) 2018 MIT
 //
-using System;
 using System.Collections.Generic;
 using Dharma.ItemsBlock.Models;
 

@@ -6,10 +6,8 @@
 // Copyright (c) 2018 MIT
 //
 
-using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
-using System.Linq;
 using Dharma.Core;
 using Dharma.OrganizationBlock.Models.Validations.Organization;
 
@@ -30,8 +28,6 @@ namespace Dharma.OrganizationBlock.Models
 		public List<ItemModel> ItemsNeeded { get; set; }
 		
 		public List<OwnerModel> Owners { get; set; }
-
-		public bool Active { get; set; }
 
 		public OrganizationModel()
 		{

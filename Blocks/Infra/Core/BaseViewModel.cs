@@ -6,6 +6,11 @@ namespace Dharma.Core
     {
         protected abstract ValidationResult ValidationResult { get; set; }
 
+        public BaseViewModel()
+        {
+          ValidationResult = new ValidationResult();
+        }
+
         public bool IsValid()
         {
             return ValidationResult.IsValid();
